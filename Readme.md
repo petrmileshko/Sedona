@@ -1,4 +1,4 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Седона» верстка с [макета](https://www.figma.com/file/Qm8qQXvJxz1S6RnDTzlEmv/HTML-1-%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0-33-Copy)
 
 * Студент: [Петр Милешко](https://htmlacademy.ru/profile/webpeternet).
 * Наставник: `Неизвестно`.
