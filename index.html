@@ -138,7 +138,7 @@
 
     </section>
 
-    <section class="hotel-search">
+    <section class="hotel-search">    <!-- Секция поиск гостиниц  / - вызов модального окна -->
       <h2 class="visually-hidden">Поиск гостиницы</h2>
 
       <p class="hotel-search text-title">Заинтересовались?</p>
@@ -147,8 +147,20 @@
 
     </section>
 
-    <section class="newsletter">
-      <h2 class="visually-hidden">Рассылка новостей</h2>
+    <section class="subscribe-newsletter">     <!-- Секция с формой подписки на рассылку новостей -->
+      <h2 class="visually-hidden">Подписка на рассылку новостей</h2>
+
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <label class="subscribe-form-title" for="email">Подпишитесь на рассылку</label>
+
+        <p class="subscribe-form-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
+        <input class="subscribe-form-email" type="text" id="email" name="email" placeholder="Ваш e-mail">
+
+        <button class="subsribe-form button" type="submit">Подписаться</button>
+
+      </form>
 
     </section>
 
