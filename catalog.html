@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Катлог гостиниц</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+
+      <nav class="navigation">  <!-- главная навигация по сайту-->
+
+        <a class="logo-link" href="/">
+          <img class="logo-img" src="" alt="Логотип сайта о городе Седона">
+        </a>
+
+        <ul class="navigation-menu">    <!-- Меню основной навигации -->
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="">Главная</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link" href="">О Седоне</a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link  navigation-link-active" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-menu user-menu">  <!-- Пользовательское служебное меню -->
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link icon-search" href="">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link icon-favorite" href="">
+              <span class="visually-hidden">Избранное</span>
+              <span class="favorite-counter">12</span>
+            </a>
+          </li>
+          <li class="navigation-menu-item">
+            <a class="navigation-menu-link button" href="catalog.html">Хочу сюда!</a>
+          </li>
+        </ul>
+
+      </nav>
+
+  </header>
+
+  <main class="catalog-page">
+
+    <header class="catalog-page-header">    <!-- Шапка страницы Каталог -->
+      <h1 class="catalog-page-heading">Гостиницы Седоны</h1>
+      <ul class="breadcrumps-list">
+        <li class="breadcrumps-item">
+          <a class="breadcrumps-link icon-home" href="/">
+            <span class="visually-hidden">Главная</span>
+          </a>
+        </li>
+        <li class="breadcrumps-item">
+          <a class="breadcrumps-link">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
+
+    <section class="catalog">   <!-- Секция Каталога с фильтрами, пагинацией, карточками -->
+
+      <form class="catalog-filters" action="" method="post"></form>
+      <form class="catalog-sorting" action="" method="post"></form>
+
+      <ul class="catalog-list">
+        <li class="catalog-list-item"></li>
+        <li class="catalog-list-item"></li>
+        <li class="catalog-list-item"></li>
+        <li class="catalog-list-item"></li>
+      </ul>
+
+      <button class="load-more button" type="button"></button>
+
+      <ul class="catalog-pagination">
+        <li class="pagination-item"></li>
+        <li class="pagination-item"></li>
+        <li class="pagination-item"></li>
+        <li class="pagination-item"></li>
+        <li class="pagination-item"></li>
+        <li class="pagination-item"></li>
+      </ul>
+
+      <form class="catalog-list-control" action="" method="post"></form>
+
+    </section>
+
+    <section class="subscribe-newsletter">     <!-- Секция с формой подписки на рассылку новостей -->
+      <h2 class="subscribe-newsletter-title">Подпишитесь на рассылку</h2>
+      <p class="subscribe-newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <label class="subscribe-form field-label">
+          <span class="visually-hidden">Ваш e-mail</span>
+          <input class="subscribe-form field-input" type="email" name="email" placeholder="Ваш e-mail">
+        </label>
+        <button class="subsribe-form button" type="submit">Подписаться</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+
+    <section class="footer-socials">      <!-- Секция в подвале со списком соц сетей -->
+      <h2 class="visually-hidden">Ссылки на соц сети</h2>
+
+      <ul class="footer-socials-list">     <!-- Список соц сетей -->
+        <li class="footer-socials-item">
+          <a class="footer-socials-links" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a class="footer-socials-links" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="footer-socials-item">
+          <a class="footer-socials-links" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="footer-contacts">    <!-- Секция с контактами -->
+      <h2 class="visually-hidden">Контакты</h2>
+
+      <a class="footer-contact-tel" href="tel:78128121212">
+        <span class="visually-hidden">Телефон:</span>
+        +7 (812) 812-12-12
+      </a>
+
+    </section>
+
+    <section class="project-developers">    <!-- Секция о разработчиках проекта -->
+      <h2 class="visually-hidden">Разработчики проекта</h2>
+
+      <a class="developer-link" href="https://htmlacademy.ru/">
+        <img class="developer-logo" src="" alt="логотип разработчика - HTML Академия.">
+        <span class="visually-hidden">сайт HTML Академии</span>
+      </a>
+
+    </section>
+
+  </footer>
+
+</body>
+
+</html>
