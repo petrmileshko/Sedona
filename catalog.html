@@ -67,9 +67,88 @@
     </header>
 
     <section class="catalog">   <!-- Секция Каталога с фильтрами, пагинацией, карточками -->
-      <h2 class="visually-hidden">Каталог гостиниц</h2>
-      <form class="catalog-filters" action="" method="post"></form>
-      <form class="catalog-sorting" action="" method="post"></form>
+      <h2 class="visually-hidden">Каталог гостиниц c фильтрами, сортировкой</h2>
+
+      <form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="post">    <!-- Форма отправки фильтров / Начала-->
+
+        <fieldset class="catalog-filters-group">
+          <legend class="filters-group-title">Инфраструктура:</legend>
+          <ul class="filters-group-list">
+            <li class="filters-group-item">
+              <label class="item-control">
+                <input class="visually-hidden control-input" type="checkbox" name="swimmingpool" checked>
+                <span class="item-control-mark"></span>
+                <span class="item-control-label">Бассейн</span>
+              </label>
+            </li>
+            <li class="filters-group-item">
+              <label class="item-control">
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                <span class="item-control-mark"></span>
+                <span class="item-control-label">Парковка</span>
+              </label>
+            </li>
+            <li class="filters-group-item">
+              <label class="item-control">
+                <input class="visually-hidden control-input" type="checkbox" name="wifi">
+                <span class="item-control-mark"></span>
+                <span class="item-control-label">Wi-Fi</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filters-group">
+          <legend class="filters-group-title">Тип жилья:</legend>
+          <ul class="filters-group-list">
+            <li class="filters-group-item">
+              <label class="item-control">
+                <input class="visually-hidden control-input" type="radio" name="housing_type" value="hotel" checked>
+                <span class="item-control-mark"></span>
+                <span class="item-control-label">Гостиница</span>
+              </label>
+            </li>
+            <li class="filters-group-item">
+              <label class="item-control">
+                <input class="visually-hidden control-input" type="radio" name="housing_type" value="motel">
+                <span class="item-control-mark"></span>
+                <span class="item-control-label">Мотель</span>
+              </label>
+            </li>
+            <li class="filters-group-item">
+              <label class="item-control">
+                <input class="visually-hidden control-input" type="radio" name="housing_type" value="apartments">
+                <span class="item-control-mark"></span>
+                <span class="item-control-label">Апартаменты</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filters-group">
+          <legend class="filters-group-title">Стоимость, ₽:</legend>
+          <label class="filter-item-label">
+            <input class="filter-item-input value-min" type="text" name="min_price" value="0">
+            от
+          </label>
+          <label class="filter-item-label">
+            <input class="filter-item-input value-max" type="text" name="max_price" value="9000">
+            до
+          </label>
+          <button class="range-toggle value-min" type="button">
+            <span class="visually-hidden">Изменить минимальную стоимость</span>
+          </button>
+          <button class="range-toggle value-max" type="button">
+            <span class="visually-hidden">Изменить максимальную стоимость</span>
+          </button>
+        </fieldset>
+
+        <button class="button" type="submit">Применить</button>
+        <button class="button" type="reset">Сбросить</button>
+
+      </form>   <!-- Форма отправки фильтров / Конец-->
+
+      <form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="post"></form>
 
       <ul class="catalog-list">
         <li class="catalog-list-item"></li>
@@ -89,7 +168,7 @@
         <li class="pagination-item"></li>
       </ul>
 
-      <form class="catalog-list-control" action="" method="post"></form>
+      <form class="catalog-list-control" action="https://echo.htmlacademy.ru/" method="post"></form>
 
     </section>
 
