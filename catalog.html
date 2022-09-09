@@ -148,13 +148,92 @@
 
       </form>   <!-- Форма отправки фильтров / Конец-->
 
-      <form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="post"></form>
+      <p class="hotels-found-text">Найдено гостиниц: <span class="hotels-found-counter">38</span></p>
 
-      <ul class="catalog-list">
-        <li class="catalog-list-item"></li>
-        <li class="catalog-list-item"></li>
-        <li class="catalog-list-item"></li>
-        <li class="catalog-list-item"></li>
+      <form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="sorting-control">сортировка</label>
+        <select class="catalog-sorting-selector" name="sorting" id="sorting-control">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheapest" selected>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+      </form>
+
+      <a class="button view-tile view-active" href="#">
+        <span class="visually-hidden">показать таблицей</span>
+      </a>
+      <a class="button view-slider" href="#">
+        <span class="visually-hidden">показать слайдером</span>
+      </a>
+      <a class="button view-list" href="#">
+        <span class="visually-hidden">показать списком</span>
+      </a>
+
+      <ul class="hotel-list">
+        <li class="hotel-card">
+          <img class="hotel-card-image" src="" alt="миниатюра вид на объект">
+          <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+          <p class="hotel-card-info">
+            <span class="hotel-info-type">Гостиница</span>
+            <span class="hotel-info-price">От 4000 ₽</span>
+          </p>
+          <a href="" class="hotel-card-more button">подробнее</a>
+          <a href="" class="hotel-card-favorite button">В избранное</a>
+          <p class="hotel-card-ratings">
+            <span class="visually-hidden hotel-rating-stars-">4 звезды</span>
+            <span class="hotel-rating-popularity">
+              Рейтинг: <span class="rating-popularity-counter">8,5</span>
+            </span>
+          </p>
+        </li>
+        <li class="hotel-card">
+          <img class="hotel-card-image" src="" alt="миниатюра вид на объект">
+          <h3 class="hotel-card-title">Desert Quail Inn</h3>
+          <p class="hotel-card-info">
+            <span class="hotel-info-type">Гостиница</span>
+            <span class="hotel-info-price">От 3000 ₽</span>
+          </p>
+          <a href="" class="hotel-card-more button">подробнее</a>
+          <a href="" class="hotel-card-favorite button">В избранное</a>
+          <p class="hotel-card-ratings">
+            <span class="visually-hidden hotel-rating-stars-">3 звезды</span>
+            <span class="hotel-rating-popularity">
+              Рейтинг: <span class="rating-popularity-counter">8,9</span>
+            </span>
+          </p>
+        </li>
+        <li class="hotel-card">
+          <img class="hotel-card-image" src="" alt="миниатюра вид на объект">
+          <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+          <p class="hotel-card-info">
+            <span class="hotel-info-type">Гостиница</span>
+            <span class="hotel-info-price">От 2000 ₽</span>
+          </p>
+          <a href="" class="hotel-card-more button">подробнее</a>
+          <a href="" class="hotel-card-favorite button">В избранное</a>
+          <p class="hotel-card-ratings">
+            <span class="visually-hidden hotel-rating-stars-">2 звезды</span>
+            <span class="hotel-rating-popularity">
+              Рейтинг: <span class="rating-popularity-counter">9,2</span>
+            </span>
+          </p>
+        </li>
+        <li class="hotel-card">
+          <img class="hotel-card-image" src="" alt="миниатюра вид на объект">
+          <h3 class="hotel-card-title">GreenTree Inn</h3>
+          <p class="hotel-card-info">
+            <span class="hotel-info-type">Гостиница</span>
+            <span class="hotel-info-price">От 3000 ₽</span>
+          </p>
+          <a href="" class="hotel-card-more button">подробнее</a>
+          <a href="" class="hotel-card-favorite button">В избранное</a>
+          <p class="hotel-card-ratings">
+            <span class="visually-hidden hotel-rating-stars-">2 звезды</span>
+            <span class="hotel-rating-popularity">
+              Рейтинг: <span class="rating-popularity-counter">9,2</span>
+            </span>
+          </p>
+        </li>
       </ul>
 
       <button class="load-more button" type="button"></button>
