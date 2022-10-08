@@ -1,0 +1,44 @@
+/* 
+	Загрузка шрифта - Начало
+ */
+@font-face {
+	font-family: "PT sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/ptsans-400.woff2') format('woff2');
+	font-display: swap;
+}
+@font-face {
+	font-family: "PT sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url('./fonts/ptsans-700.woff2') format('woff2');
+	font-display: swap;
+}
+ /* 
+	Загрузка шрифта - Завершение
+ */
+
+ /* Визуальное скрывания эелемнта со страницы в браузере 
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}*/
+
+
+ * {						/* обнуление отступов у всех элементов */
+		margin: 0;
+ }
+
+body {
+	font-family: "PT sans", sans-serif;
+}
