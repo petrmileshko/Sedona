@@ -19,7 +19,7 @@
 	Загрузка шрифта - Завершение
  */
 
- /* Визуальное скрывания эелемнта со страницы в браузере 
+ /* Визуальное скрывания эелемнта со страницы в браузере */
 
 .visually-hidden {
 	position: absolute;
@@ -32,13 +32,61 @@
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}*/
+}
 
 	/* обнуление отступов у всех элементов 
  * {					
 		margin: 0;
+		padding: 0;
  }
 */
+
 body {
 	font-family: "PT sans", sans-serif;
+	color: #000;
+	background-color: #F2F2F2;
 }
+
+a {					/* меняем у всех ссылок цвет по умолчанию на наследуемый от родителя */
+	color: inherit;	
+}
+
+.button {			/* для большинтсва кнопок на всех страницах */
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	background-color: #756257;
+	border-radius: 4px;
+}
+
+
+/* Шапка сайта */
+.site-header {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	background-color: #fff;
+}
+.navigation-menu-link,
+.footer-socials-links,
+.footer-contact-tel,
+.developer-link {
+	text-decoration: none;
+}
+
+/* Подвал сайта */
+.site-footer {
+	background-color: #fff;
+}
+
+
+/* Главная Страница */
+.home-page {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+}
+
