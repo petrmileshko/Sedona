@@ -5,14 +5,14 @@
 	font-family: "PT sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url('./fonts/ptsans-400.woff2') format('woff2');
+	src: url('../fonts/ptsans-400.woff2') format('woff2');
 	font-display: swap;
 }
 @font-face {
 	font-family: "PT sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url('./fonts/ptsans-700.woff2') format('woff2');
+	src: url('../fonts/ptsans-700.woff2') format('woff2');
 	font-display: swap;
 }
  /* 
@@ -94,7 +94,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .subscribe-newsletter {
 	color: #fff;
 	background-color: #000;
-	background-image: url('./images/index/bg-newsletter.jpg');
+	background-image: url('../images/index/bg-newsletter.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -106,7 +106,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .filter {
 	color: #fff;
 	background-color: #000;
-	background-image: url('./images/catalog/bg-catalog.jpg');
+	background-image: url('../images/catalog/bg-catalog.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
