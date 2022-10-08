@@ -92,10 +92,21 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Секция подписки на рассылку */
 .subscribe-newsletter {
+	color: #fff;
+	background-color: #000;
 	background-image: url('./images/index/bg-newsletter.jpg');
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 }
 
 
 /* Страница Каталога */
+
+/* Секция Список товаров, Фильтры и Сортировки */
+.catalog-filters {
+	color: #fff;
+	background-color: #000;
+	background-image: url('./images/catalog/bg-catalog.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
