@@ -72,13 +72,12 @@
 			</ul>
 		</header>
 
-		<section class="catalog">
-			<!-- Секция Каталога с фильтрами, пагинацией, карточками -->
-			<h2 class="visually-hidden">Каталог гостиниц c фильтрами, сортировкой гостиниц</h2>
+		<section class="filter">
+			<!-- Секция фильтров -->
+			<h2 class="visually-hidden">Фильтр списка гостиниц</h2>
 
+			<!-- Форма отправки фильтров / Начало-->
 			<form class="catalog-filters" action="https://echo.htmlacademy.ru/" method="post">
-				<!-- Форма отправки фильтров / Начала-->
-
 				<fieldset class="catalog-filters-group">
 					<legend class="filters-group-title">Инфраструктура:</legend>
 					<ul class="filters-group-list">
@@ -155,7 +154,12 @@
 				<button class="button" type="reset">Сбросить</button>
 
 			</form> <!-- Форма отправки фильтров / Конец-->
-			<h3 class="visually-hidden">Результаты поиска</h3>
+		</section>
+
+		<section class="catalog">
+			<!-- Секция Каталога и фильтров  -->
+			<h2 class="visually-hidden">Результаты поиска - Список гостиниц</h2>
+
 			<p class="hotels-found-text">Найдено гостиниц: <span class="hotels-found-counter">38</span></p>
 
 			<form class="catalog-sorting" action="https://echo.htmlacademy.ru/" method="post">
@@ -177,6 +181,7 @@
 			<a class="button view-list" href="#">
 				<span class="visually-hidden">показать списком</span>
 			</a>
+
 			<ul class="hotel-list">
 				<li class="hotel-card">
 					<a class="hotel-card-link" href="#">
