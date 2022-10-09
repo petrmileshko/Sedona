@@ -73,10 +73,11 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	line-height: 26px;
 	background-color: #fff;
 }
-.navigation-menu-link,
+.navigation-menu-link,	/* Интерактивным элементам ссылкам убрать подчеркивание */
 .footer-socials-links,
 .footer-contact-tel,
-.developer-link {
+.developer-link,
+.pagination-link {
 	text-decoration: none;
 }
 .icon-search,
@@ -248,6 +249,26 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Страница Каталога */
 
+.page-header {
+	color: #fff;
+	background-color: #000;
+}
+.page-heading {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 78px
+}
+.icon-home {
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-image: url('../images/catalog/breadcramps-home.svg');
+}
+.breadcrumps-list {
+	font-size: 16px;
+	line-height: 21px;
+}
+
 /* Секция Список товаров, Фильтры и Сортировки */
 .filter {
 	color: #fff;
@@ -256,3 +277,177 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.catalog-filters-group {
+	border: none;
+}
+.filters-group-title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+}
+.filters-group-item {
+	font-size: 18px;
+	line-height: 23px;
+}
+.catalog-filters-submit.button {
+	background-color: #83B3D3;
+	border-radius: 4px;
+}
+.catalog-filters-reset.button {
+	font-size: 18px;
+	line-height: 23px;
+	text-transform: none;
+	background-color: transparent;
+}
+.filter-item-input {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #FFFFFF;
+	background-color: transparent;
+	border: 2px solid #FFFFFF;
+	border-radius: 4px;
+}
+
+/* Секция списка гостиниц и сортировки */
+.catalog {
+	background-color: #fff;
+}
+.hotels-found-text {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 39px;
+	text-transform: uppercase;
+}
+
+	/* Сортировка */
+	.catalog-sorting {
+		font-size: 18px;
+		line-height: 23px;
+		color: #333333;
+		border: 2px solid #E6E6E6;
+		border-radius: 4px;
+	}
+	.select-menu,			/* Спикам убрать маркеры */
+	.catalog-view,
+	.hotel-list,
+	.catalog-pagination {
+		padding: 4px;
+		list-style: none;
+	}
+	.catalog-view-item {
+		position: relative;
+		width: 48px;
+		height: 48px;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center center;
+		border: 2px solid #E6E6E6;
+		border-radius: 4px;
+	}
+	.catalog-view-item:first-child {
+		background-image: url('../images/catalog/btn-mode-tile.svg');
+	}
+	.catalog-view-item:nth-child(2) {
+		background-image: url('../images/catalog/btn-mode-slideshow.svg');
+	}
+	.catalog-view-item:last-child {
+		background-image: url('../images/catalog/btn-mode-list.svg');
+	}
+	.catalog-view-item.view-item-active {
+		border-color: #000;
+	}
+	.catalog-view-link::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		cursor: pointer;
+	}
+
+	/* Список гостиниц  */
+	.hotel-card-title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 31px;
+	}
+	.hotel-card-info {
+		font-size: 18px;
+		line-height: 23px;
+		color: #333333;
+	}
+	.hotel-card-more.button,
+	.hotel-card-favorite.button {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.hotel-card-favorite.button {
+		background: #83B3D3;
+	}
+	.hotel-card-ratings {
+		display: flex;
+		gap: 49px;
+		align-items: center;
+		width: 300px;
+		height: 37px;
+	}
+	.hotel-rating-stars {
+		display: flex;
+		gap: 7px;
+	}
+	.hotel-rating-star::before {
+		display: block;
+		content: "";
+		width: 18px;
+		height: 17px;
+		background-image: url('../images/catalog/star-icon.svg');
+		background-repeat: no-repeat;
+	}
+	.hotel-rating-popularity {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 160px;
+		height: 37px;
+		font-size: 16px;
+		line-height: 21px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #333333;
+		background: #F2F2F2;
+		border-radius: 4px;
+	}
+
+	/* Пагинация */
+	.catalog-load-more.button {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 26px;
+		background-color: #83B3D3;
+	}
+	.catalog-pagination {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.pagination-link {
+		display: block;
+		width: 55px;
+		height: 55px;
+		color: #fff;		
+		background: #83B3D3;
+		border-radius: 4px;
+	}
+	.pagination-active {
+		color: #000;
+		background: #F2F2F2;
+	}
+	.pagination-select {
+		font-size: 18px;
+		line-height: 23px;
+		color: #333333;
+	}
