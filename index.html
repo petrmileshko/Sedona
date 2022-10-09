@@ -59,15 +59,18 @@
 	<main class="home-page">
 		<h1 class="visually-hidden">О городе Седона.</h1>
 
-		<section class="intro">
-			<!-- Блок первого экрана Приветсвие и Вступление к описанию преимуществ -->
-			<h2 class="visually-hidden">Вступление.</h2>
+		<section class="advantages">
+			<h2 class="visually-hidden">Преимущества города Седона.</h2>
 
-			<img class="intro-image" src="./images/index/intro-text.svg" width="458" height="352"
-				alt="Добро пожаловать в город Седона">
+			<div class="intro">
+				<!-- Вступление Фон и Приветствие на англинском -->
 
-			<div class="intro-devider"></div>
+				<img class="intro-image" src="./images/index/intro-text.svg" width="458" height="352"
+					alt="Добро пожаловать в город Седона">
 
+					<div class="intro-devider"></div>
+			</div>
+			
 			<div class="intro-text">
 				<p class="intro-text text-title">
 					Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -77,11 +80,7 @@
 				</p>
 			</div>
 
-		</section>
-
-		<section class="advantages">
-			<!-- Секция списка основыных преимуществ города -->
-			<h2 class="visually-hidden">Преимущества города Седона.</h2>
+			<!-- Список основыных преимуществ города -->
 
 			<ol class="advantages-list">
 				<!-- Список -->
@@ -90,7 +89,7 @@
 
 					<div class="advantages-item-info">
 						<h3 class="advantages-item-title">Настоящий городок</h3>
-						<p>— №1 —</p>
+						<p class="advantages-item-number">— №1 —</p>
 						<p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 					</div>
 
@@ -126,7 +125,7 @@
 						height="384" alt="Мост дьявола. Фотография ландшафта">
 					<div class="advantages-item-info">
 						<h3 class="advantages-item-title">Там есть мост дьявола</h3>
-						<p>— №2 —</p>
+						<p class="advantages-item-number">— №2 —</p>
 						<p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 					</div>
 				</li>
@@ -134,21 +133,21 @@
 				<li class="advantages-item">
 					<!-- Третье преимущество -->
 					<h3 class="advantages-item-title">Небольшая площадь</h3>
-					<p>— №3 —</p>
+					<p class="advantages-item-number">— №3 —</p>
 					<p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
 				</li>
 
 				<li class="advantages-item">
 					<!-- Четвертое преимущество -->
 					<h3 class="advantages-item-title">Красивая дорога</h3>
-					<p>— №4 —</p>
+					<p class="advantages-item-number">— №4 —</p>
 					<p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
 
 				<li class="advantages-item">
 					<!-- Пятое преимущество -->
 					<h3 class="advantages-item-title">Мало туристов</h3>
-					<p>— №5 —</p>
+					<p class="advantages-item-number">— №5 —</p>
 					<p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
 				</li>
 
@@ -160,15 +159,16 @@
 			<!-- Секция поиск гостиниц  / - вызов модального окна -->
 			<h2 class="visually-hidden">Поиск гостиницы</h2>
 
-			<p class="hotel-search text-title">Заинтересовались?</p>
-			<p class="hotel-search text-description"></p>
-			<a class="hotel-search button" href="#" data-modal="hotel-search">ПОИСК ГОСТИНИЦЫ В седоне</a>
+			<p class="text-title">Заинтересовались?</p>
+			<p class="text-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+				гостиниц в Седоне</p>
+			<a class="search button" href="#" data-modal="hotel-search"><span> ПОИСК ГОСТИНИЦЫ В седоне</span></a>
 
 		</section>
 
 		<section class="subscribe-newsletter">
 			<!-- Секция с формой подписки на рассылку новостей -->
-			<h2 class="subscribe-newsletter-title">Подпишитесь на рассылку</h2>
+			<h2 class="subscribe-newsletter-title text-title">Подпишитесь на рассылку</h2>
 			<p class="subscribe-newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!
 			</p>
 
