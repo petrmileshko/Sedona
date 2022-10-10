@@ -40,13 +40,16 @@
 		padding: 0;
  }
 */
+.page {
+	color: #000;
+	background-color: #F2F2F2;
+}
 
 body {
 	width: 1200px;
 	margin: 0 auto;
 	font-family: "PT sans", sans-serif;
-	color: #000;
-	background-color: #F2F2F2;
+	background-color: #fff;
 }
 
 a {					/* меняем у всех ссылок цвет по умолчанию на наследуемый от родителя */
