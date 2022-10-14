@@ -81,7 +81,9 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .filters-group-list,
 .catalog-view,
 .hotel-list,
-.catalog-pagination {
+.catalog-pagination,
+.footer-socials-list,
+.advantages-list {
 	list-style: none;
 }
 
@@ -145,10 +147,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 /* Подвал сайта */
 .site-footer {
 	background-color: #fff;
-}
-
-.footer-socials-list {
-	list-style: none;
 }
 
 .footer-socials-item:first-child {
@@ -221,10 +219,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .advantages {
 	text-align: center;
 	color: #333333;
-}
-
-.advantages-list {
-	list-style-type: none;
 }
 
 .advantages-item-info {
