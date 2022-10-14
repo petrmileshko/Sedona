@@ -3,6 +3,7 @@
 * Студент: [Петр Милешко](https://htmlacademy.ru/profile/webpeternet).
 * Наставник: `Неизвестно`.
 
+[просмотр результата](https://petrmileshko.github.io/Sedona/)
 
 [текущий проект](https://petrmileshko.github.io/Sedona/)
 ---
