@@ -41,12 +41,16 @@
  }
 */
 .page {
+	height: 100%;
 	color: #000;
 	background-color: #F2F2F2;
 }
 
 body {
+	display: flex;
+	flex-direction: column;
 	width: 1200px;
+	min-height: 100%;
 	margin: 0 auto;
 	font-family: "PT sans", sans-serif;
 	background-color: #fff;
@@ -173,6 +177,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Главная Страница */
 .home-page {
+	flex-grow: 1;
 	font-size: 18px;
 	line-height: 21px;
 }
