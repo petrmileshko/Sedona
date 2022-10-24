@@ -39,13 +39,21 @@ h1,h2,h3,h4,h5,h6 {
 		margin: 0;
  }
 
+ /* изменяем боксовою модель */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* тег html свойства единые для большинства дочерних элементов */
 .page {
 	height: 100%;
 	color: #000;
 	background-color: #F2F2F2;
-	box-sizing: border-box;
 }
 
+/* переопределяем свойства body */
 body {
 	display: flex;
 	flex-direction: column;
@@ -430,7 +438,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 							right: 12px;
 						}
 						.filter-item-input {
-							box-sizing: border-box;
 							width: 144px;
 							font-family: 'PT Sans';
 							font-style: normal;
@@ -511,7 +518,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.catalog-view {
 			display: flex;
 			justify-content: space-between;
-			width: 160px;
+			min-width: 160px;
 			padding: 0;
 		}
 		.catalog-view-item {
@@ -523,7 +530,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			background-position: center center;
 			border: 2px solid #E6E6E6;
 			border-radius: 4px;
-			box-sizing: border-box;
 		}
 
 		.catalog-view-item:first-child {
@@ -561,6 +567,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		margin: 0 auto;
 	}
 			.hotel-card {
+				width: 340px;
 				padding: 20px;
 			}
 					.hotel-card-title {
