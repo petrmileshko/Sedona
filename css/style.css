@@ -443,10 +443,11 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Страница Каталога */
 .page-header {
-	padding: 0 72px 0 71px;
-}
 
+}
 		.page-heading {
+			height: 68px;
+			margin-bottom: 5px;
 			font-weight: 700;
 			font-size: 60px;
 			line-height: 78px
@@ -476,93 +477,118 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Секция Список товаров, Фильтры и Сортировки */
 .bg-container {
+	padding: 30px 72px 83px 71px;
 	color: #fff;
 	background-color: #000;
 	background-image: url('../images/catalog/bg-catalog.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-	.filter {
-		padding: 0 72px 0 71px;
+.filter {
+	padding: 45px 0 0 0;
+}
+	.catalog-filters {
+		display: flex;
+		align-items: center;
 	}
-		.catalog-filters {
-			display: flex;
-		}
-				.catalog-filters-group {
-					width: 150px;
-					border: none;
-					padding: 0;
-					margin: 0 67px 0 0;
-				}
-				.catalog-filters-group.filters-group-large {
-					display: flex;
-					position: relative;
-					flex-wrap: wrap;
-					margin-left: 100px;
-						width: 288px;
-				}
-						.filter-item-label {
-							position: absolute;
-							top: 12px;
-							font-size: 18px;
-							line-height: 23px;
-							opacity: 0.3;
-						}
-						.filter-item-label:first-of-type {
-							left: 112px;
-						}
-						.filter-item-label:last-of-type {
-							right: 12px;
-						}
-						.filter-item-input {
-							width: 144px;
-							font-family: 'PT Sans';
-							font-style: normal;
-							font-weight: 400;
-							font-size: 18px;
-							line-height: 23px;
-							color: #FFFFFF;
-							background-color: transparent;
-							border: 2px solid #FFFFFF;
-							border-radius: 4px;
-						}
-						.filter-item-input:last-of-type {
-							border-left: none;
-							border-top-left-radius: 0;
-							border-bottom-left-radius: 0;
-						}
-						.filter-item-input:first-of-type {
-							border-top-right-radius: 0;
-							border-bottom-right-radius: 0;
-						}
-						.filters-group-title {
-							font-weight: 700;
-							font-size: 20px;
-							line-height: 26px;
-						}
-						.filters-group-item {
-							font-size: 18px;
-							line-height: 23px;
-						}
-				.buttons-container {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					width: 160px;
-					margin-left: auto;
-				}
-						.catalog-filters-submit.button {
-							width: 160px;
-							background-color: #83B3D3;
-							border-radius: 4px;
-						}
+			.catalog-filters-group {
+				width: 150px;
+				border: none;
+				padding: 0;
+				margin: 0 67px 0 0;
+			}
+					.filters-group-title {
+						margin-bottom: 30px;
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 26px;
+					}
+							.filters-group-item {
+								font-size: 18px;
+								line-height: 23px;
+							}
+							.filters-group-item:not(:last-child) {
+								margin-bottom: 16px;
+							}
+									.item-control {
+										display: flex;
+									}
+											.item-control .item-control-mark {
+												display: block;
+												width: 20px;
+												height: 20px;
+												margin-right: 19px;
+												background-color: #fff;
+											}
+											.item-control-mark.radio-button {
+												border-radius: 50%;
+											}
+											
+			.catalog-filters-group.filters-group-large {
+				display: flex;
+				position: relative;
+				flex-wrap: wrap;
+				align-self: start;
+				margin-left: 100px;
+					width: 288px;
+			}
+					.filter-item-label {
+						position: absolute;
+						top: 12px;
+						font-size: 18px;
+						line-height: 23px;
+						opacity: 0.3;
+					}
+					.filter-item-label:first-of-type {
+						left: 112px;
+					}
+					.filter-item-label:last-of-type {
+						right: 12px;
+					}
+					.filter-item-input {
+						width: 144px;
+						min-height: 48px;
+						font-family: 'PT Sans';
+						font-style: normal;
+						font-weight: 400;
+						font-size: 18px;
+						line-height: 23px;
+						color: #FFFFFF;
+						background-color: transparent;
+						border: 2px solid #FFFFFF;
+						border-radius: 4px;
+					}
+					.filter-item-input:last-of-type {
+						border-left: none;
+						border-top-left-radius: 0;
+						border-bottom-left-radius: 0;
+					}
+					.filter-item-input:first-of-type {
+						border-top-right-radius: 0;
+						border-bottom-right-radius: 0;
+					}
 
-						.catalog-filters-reset.button {
-							font-size: 18px;
-							line-height: 23px;
-							text-transform: none;
-							background-color: transparent;
-						}
+			.buttons-container {
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+				width: 160px;
+				margin-left: auto;
+			}
+					.catalog-filters-submit.button {
+						flex: 1 1 auto;
+						width: 160px;
+						background-color: #83B3D3;
+						border-radius: 4px;
+					}
+
+					.catalog-filters-reset.button {
+						flex: 1 1 auto;
+						font-size: 18px;
+						line-height: 23px;
+						text-transform: none;
+						background-color: transparent;
+					}
 
 /* Секция списка гостиниц и сортировки */
 .catalog {
@@ -573,67 +599,63 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		display: flex;
 		width: 1056px;
 		margin: 0 auto;
+		padding: 44px 0 33px 0;
 	}
-		.hotels-found-text {
-			min-width: 338px;
-			margin-right: 191px;
-			font-weight: 700;
-			font-size: 30px;
-			line-height: 39px;
-		}
+			.hotels-found-text {
+				min-width: 338px;
+				margin-right: 191px;
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 39px;
+			}
 
-		/* Сортировка */
-		.catalog-sorting {
-			width: 287px;
-			margin-right: 81px;
-			font-size: 18px;
-			line-height: 23px;
-			color: #333333;
-			border: 2px solid #E6E6E6;
-			border-radius: 4px;
-		}
-		.catalog-view {
-			display: flex;
-			justify-content: space-between;
-			min-width: 160px;
-			padding: 0;
-		}
-		.catalog-view-item {
-			position: relative;
-			width: 48px;
-			height: 48px;
-			background-color: transparent;
-			background-repeat: no-repeat;
-			background-position: center center;
-			border: 2px solid #E6E6E6;
-			border-radius: 4px;
-		}
-
-		.catalog-view-item:first-child {
-			background-image: url('../images/catalog/btn-mode-tile.svg');
-		}
-
-		.catalog-view-item:nth-child(2) {
-			background-image: url('../images/catalog/btn-mode-slideshow.svg');
-		}
-
-		.catalog-view-item:last-child {
-			background-image: url('../images/catalog/btn-mode-list.svg');
-		}
-
-		.catalog-view-item.view-item-active {
-			border-color: #000;
-		}
-
-		.catalog-view-link::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
-			cursor: pointer;
-		}
+			/* Сортировка */
+			.catalog-sorting {
+				width: 287px;
+				margin-right: 81px;
+				font-size: 18px;
+				line-height: 23px;
+				color: #333333;
+				border: 2px solid #E6E6E6;
+				border-radius: 4px;
+			}
+			.catalog-view {
+				display: flex;
+				justify-content: space-between;
+				min-width: 160px;
+				padding: 0;
+			}
+					.catalog-view-item {
+						position: relative;
+						width: 48px;
+						height: 48px;
+						background-color: transparent;
+						background-repeat: no-repeat;
+						background-position: center center;
+						border: 2px solid #E6E6E6;
+						border-radius: 4px;
+					}
+					.catalog-view-item:first-child {
+						background-image: url('../images/catalog/btn-mode-tile.svg');
+					}
+					.catalog-view-item:nth-child(2) {
+						background-image: url('../images/catalog/btn-mode-slideshow.svg');
+					}
+					.catalog-view-item:last-child {
+						background-image: url('../images/catalog/btn-mode-list.svg');
+					}
+					.catalog-view-item.view-item-active {
+						border-color: #000;
+					}
+						.catalog-view-link::before {
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0;
+							bottom: 0;
+							right: 0;
+							cursor: pointer;
+						}
 
 	/* Список гостиниц  */
 	.hotel-list {
@@ -641,26 +663,42 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		flex-wrap: wrap;
 		width: 1056px;
 		margin: 0 auto;
+		column-gap: 18px;
+		row-gap: 10px;
 	}
 			.hotel-card {
 				width: 340px;
 				padding: 20px;
 			}
-					.hotel-card-title {
-						font-weight: 700;
-						font-size: 24px;
-						line-height: 31px;
+					.hotel-card-link {
+						display: flex;
+						flex-direction: column;
 					}
+							.hotel-card-title {
+								padding: 16px 0;
+								font-weight: 700;
+								font-size: 24px;
+								line-height: 31px;
+							}
 					.hotel-card-info {
+						margin-bottom: 16px;
 						font-size: 18px;
 						line-height: 23px;
 						color: #333333;
 					}
 					.hotel-card-more.button,
 					.hotel-card-favorite.button {
+						display: block;
+						width: 133px;
+						padding: 8px 0;
 						font-weight: 700;
 					}
+					.hotel-card-more.button {
+						float: right;
+						width: 141px;
+					}
 					.hotel-card-favorite.button {
+						margin-right: 25px;
 						background: #83B3D3;
 					}
 					.hotel-card-ratings {
@@ -669,6 +707,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						align-items: center;
 						width: 300px;
 						height: 37px;
+						margin-top: 16px;
 					}
 					.hotel-rating-stars {
 						display: flex;
@@ -701,6 +740,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		display: block;
 		width: 620px;
 		margin: 0 auto;
+		padding: 17px 0;
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 26px;
@@ -711,6 +751,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		height: 1px;
 		margin: 0 auto;
 		background-color: #E6E6E6;
+		margin-top: 34px;
+		margin-bottom: 30px;
 	}
 	.pagination-container {
 		display: flex;
@@ -755,6 +797,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				}
 
 .catalog+.subscribe-newsletter {
+	padding: 73px 200px 140px 200px;
 	color: inherit;
 	background-color: inherit;
 	background-image: none;
