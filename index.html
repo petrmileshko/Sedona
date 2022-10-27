@@ -18,6 +18,7 @@
 		<nav class="navigation">
 			<!-- главная навигация по сайту-->
 			<h2 class="visually-hidden">Навигация по сайту</h2>
+
 			<a class="logo-link" href="/">
 				<img class="logo-img" src="./images/logo.svg" width="139" height="70" alt="Логотип сайта о городе Седона.">
 			</a>
@@ -72,7 +73,7 @@
 				<div class="intro-devider"></div>
 			</div>
 
-			<div class="intro-text">
+			<div class="intro-text-container">
 				<p class="intro-text text-title">
 					Седона — небольшой городок в Аризоне, заслуживающий большего!
 				</p>
@@ -90,7 +91,7 @@
 
 					<div class="advantages-item-info">
 						<div class="description-container">
-							<h3 class="advantages-item-title">Настоящий городок</h3>
+							<h3 class="advantages-item-title">Настоящий<br>городок</h3>
 							<p class="advantages-item-number">— №1 —</p>
 							<p class="advantages-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 						</div>
@@ -127,7 +128,7 @@
 						<img class="advantages-item-picture" src="./images/index/advantages-item-picture2.jpg" width="800"
 							height="384" alt="Мост дьявола. Фотография ландшафта.">
 						<div class="description-container">
-							<h3 class="advantages-item-title">Там есть мост дьявола</h3>
+							<h3 class="advantages-item-title">Там есть<br>мост дьявола</h3>
 							<p class="advantages-item-number">— №2 —</p>
 							<p class="advantages-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 						</div>
@@ -136,21 +137,21 @@
 
 				<li class="advantages-item">
 					<!-- Третье преимущество -->
-					<h3 class="advantages-item-title">Небольшая площадь</h3>
+					<h3 class="advantages-item-title">Небольшая<br>площадь</h3>
 					<p class="advantages-item-number">— №3 —</p>
 					<p class="advantages-item-description">Все достопримечательности находятся очень близко</p>
 				</li>
 
 				<li class="advantages-item">
 					<!-- Четвертое преимущество -->
-					<h3 class="advantages-item-title">Красивая дорога</h3>
+					<h3 class="advantages-item-title">Красивая<br>дорога</h3>
 					<p class="advantages-item-number">— №4 —</p>
 					<p class="advantages-item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 				</li>
 
 				<li class="advantages-item">
 					<!-- Пятое преимущество -->
-					<h3 class="advantages-item-title">Мало туристов</h3>
+					<h3 class="advantages-item-title">Мало<br>туристов</h3>
 					<p class="advantages-item-number">— №5 —</p>
 					<p class="advantages-item-description">Большинство едет в Гранд Каньон и толпится там</p>
 				</li>
@@ -173,15 +174,15 @@
 		<section class="subscribe-newsletter">
 			<!-- Секция с формой подписки на рассылку новостей -->
 			<h2 class="subscribe-newsletter-title text-title">Подпишитесь на рассылку</h2>
-			<p class="subscribe-newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!
+			<p class="subscribe-newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!
 			</p>
 
 			<form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
 
-				<label class="subscribe-form field-label">
-					<span class="visually-hidden">Ваш e-mail</span>
-					<input class="subscribe-form field-input" type="email" name="email" placeholder="Ваш e-mail">
-				</label>
+				<label class="subscribe-form field-label" for="email">
+					<span class="visually-hidden">Ваш e-mail</span></label>
+					<input class="subscribe-form field-input" type="email" id="email" name="email" placeholder="Ваш e-mail">
+
 				<button class="subsribe-form button" type="submit">Подписаться</button>
 
 			</form>
