@@ -20,7 +20,6 @@
  */
 
  /* Визуальное скрывания эелемнта со страницы в браузере */
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -88,7 +87,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	cursor: pointer;
 }
 
-.select-menu,			/* Спикам убрать маркеры */
+.select-menu,			/* Спискам убрать маркеры и отступы */
 .navigation-menu,
 .breadcrumps-list,
 .filters-group-list,
@@ -97,7 +96,9 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .catalog-pagination,
 .footer-socials-list,
 .advantages-list {
-	list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 .button,		/* Элементы в верхнем регистре */
@@ -131,8 +132,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.navigation-menu {
 			display: flex;
 			justify-content: space-around;
-			margin: 0;
-			padding: 0;
 			min-width: 345px;
 		}
 		.navigation-menu.user-menu {
@@ -382,8 +381,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 		.breadcrumps-list {
 			display: flex;
-			margin: 0;
-			padding: 0;
 			font-size: 16px;
 			line-height: 21px;
 		}
@@ -563,7 +560,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		display: flex;
 		flex-wrap: wrap;
 		width: 1056px;
-		padding: 0;
 		margin: 0 auto;
 	}
 			.hotel-card {
@@ -677,9 +673,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				.select {
 					width: 160px;
 				}
-						.select-menu {
-							padding: 0;
-						}
 .catalog+.subscribe-newsletter {
 	color: inherit;
 	background-color: inherit;
