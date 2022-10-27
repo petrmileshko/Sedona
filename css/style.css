@@ -750,8 +750,13 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				.select {
 					width: 160px;
 				}
+
 .catalog+.subscribe-newsletter {
 	color: inherit;
 	background-color: inherit;
 	background-image: none;
+}
+
+.catalog+.subscribe-newsletter .subscribe-form.field-input {
+	background: #F2F2F2;
 }
