@@ -317,7 +317,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			.advantages-item__large {
 				width: 1200px;
 			}
-			.advantages-item:nth-child(odd),
 			.advantages-item:nth-child(odd)  {
 				background: rgba(131, 179, 211, 0.12);
 			}
