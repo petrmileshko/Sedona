@@ -329,22 +329,25 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.advantages-item__large:nth-of-type(even) > .advantages-item-info {
 						flex-direction: row-reverse;
 					}
-					.advantages-item-title {
-						min-width: 400px;
-						margin-top: 98px;
-						font-weight: 700;
-						font-size: 24px;
-						line-height: 28px;
-					}
-					.advantages-item-number {
-						margin-top: 29px;
-					}
-					.advantages-item-description {
-						width: 250px;
-						margin-left: auto;
-						margin-right: auto;
-						margin-top: 30px;
-					}
+						.advantages-item-picture {
+							object-fit: cover;
+						}
+							.advantages-item-title {
+								min-width: 400px;
+								margin-top: 98px;
+								font-weight: 700;
+								font-size: 24px;
+								line-height: 28px;
+							}
+							.advantages-item-number {
+								margin-top: 29px;
+							}
+							.advantages-item-description {
+								width: 250px;
+								margin-left: auto;
+								margin-right: auto;
+								margin-top: 30px;
+							}
 			.advantages-sublist {
 				display: flex;
 				flex-wrap: wrap;
