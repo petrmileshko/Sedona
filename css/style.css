@@ -329,6 +329,9 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						color: #fff;
 						background: #83B3D3;
 					}
+					.advantages-item__large:nth-of-type(even) > .advantages-item-info {
+						flex-direction: row-reverse;
+					}
 					.advantages-item-title {
 						min-width: 400px;
 						margin-top: 98px;
