@@ -593,11 +593,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .catalog {
 	background-color: #fff;
 }
-
+.container-center {
+	width: 1056px;
+	margin: 0 auto;
+}
 	.sorting-filters {
 		display: flex;
-		width: 1056px;
-		margin: 0 auto;
 		padding: 44px 0 33px 0;
 	}
 			.hotels-found-text {
@@ -658,81 +659,81 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 	/* Список гостиниц  */
 	.hotel-list {
-		display: flex;
-		flex-wrap: wrap;
-		width: 1056px;
-		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(3, 340px);
 		column-gap: 18px;
 		row-gap: 10px;
 	}
 			.hotel-card {
+				display: grid;
+				grid-template-columns: repeat(2, 140px);
+				grid-template-rows: 206px auto auto min-content auto;
+				row-gap: 16px;
+				column-gap: 19px;
 				width: 340px;
 				padding: 20px;
 			}
-					.hotel-card-link {
-						display: flex;
-						flex-direction: column;
-					}
-							.hotel-card-title {
-								padding: 16px 0;
-								font-weight: 700;
-								font-size: 24px;
-								line-height: 31px;
-							}
-					.hotel-card-info {
-						margin-bottom: 16px;
-						font-size: 18px;
-						line-height: 23px;
-						color: #333333;
-					}
-					.hotel-card-more.button,
-					.hotel-card-favorite.button {
-						display: block;
-						width: 133px;
-						padding: 8px 0;
-						font-weight: 700;
-					}
-					.hotel-card-more.button {
-						float: right;
-						width: 141px;
-					}
-					.hotel-card-favorite.button {
-						margin-right: 25px;
-						background: #83B3D3;
-					}
-					.hotel-card-ratings {
-						display: flex;
-						gap: 49px;
-						align-items: center;
-						width: 300px;
-						height: 37px;
-						margin-top: 16px;
-					}
-					.hotel-rating-stars {
-						display: flex;
-						gap: 7px;
-					}
-					.hotel-rating-star::before {
-						display: block;
-						content: "";
-						width: 18px;
-						height: 17px;
-						background-image: url('../images/catalog/star-icon.svg');
-						background-repeat: no-repeat;
-					}
-					.hotel-rating-popularity {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						width: 160px;
-						height: 37px;
-						font-size: 16px;
-						line-height: 21px;
-						text-align: center;
-						color: #333333;
-						background: #F2F2F2;
-						border-radius: 4px;
-					}
+				.hotel-card-link.card-title,
+				.hotel-card-link.card-image {
+					grid-column: 1/-1;
+				}
+						.hotel-card-title {
+							font-weight: 700;
+							font-size: 24px;
+							line-height: 31px;
+						}
+				.hotel-info-type,
+				.hotel-info-price {
+					font-size: 18px;
+					line-height: 23px;
+					color: #333333;
+				}
+				.hotel-card-more.button,
+				.hotel-card-favorite.button {
+					padding: 8px 0;
+					font-weight: 700;
+				}
+				.hotel-card-more.button {
+					float: right;
+					width: 133px;
+				}
+				.hotel-card-favorite.button {
+					background: #83B3D3;
+					width: 141px;
+				}
+				.hotel-card-ratings {
+					grid-column: 1 /-1;
+					align-self: end;
+					display: flex;
+					flex-wrap: wrap;
+					gap: 49px;
+					align-items: center;
+					justify-content: space-between;
+					width: 300px;
+				}
+						.hotel-rating-stars {
+							display: flex;
+							gap: 5px;
+						}
+						.hotel-rating-star::before {
+							display: block;
+							content: "";
+							width: 18px;
+							height: 17px;
+							background-image: url('../images/catalog/star-icon.svg');
+							background-repeat: no-repeat;
+						}
+						.hotel-rating-popularity {
+							width: 160px;
+							height: 37px;
+							padding: 9px 0 10px 0;
+							font-size: 16px;
+							line-height: 21px;
+							text-align: center;
+							color: #333333;
+							background: #F2F2F2;
+							border-radius: 4px;
+						}
 
 	/* Пагинация */
 	.catalog-load-more.button {
@@ -746,9 +747,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		background-color: #83B3D3;
 	}
 	.devider-button-more {
-		width: 1055px;
 		height: 1px;
-		margin: 0 auto;
 		background-color: #E6E6E6;
 		margin-top: 34px;
 		margin-bottom: 30px;
@@ -756,8 +755,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	.pagination-container {
 		display: flex;
 		justify-content: space-between;
-		width: 1056px;
-		margin: 0 auto;
 	}
 			.catalog-pagination {
 				display: flex;
