@@ -135,6 +135,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		}
 		.navigation-menu {
 			display: flex;
+			flex-wrap: wrap;
 			min-width: 345px;
 		}
 		.navigation-menu-link {
