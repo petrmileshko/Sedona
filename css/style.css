@@ -746,12 +746,14 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		background-color: #83B3D3;
 	}
 	.devider-button-more {
-		height: 1px;
-		background-color: #E6E6E6;
 		margin-top: 34px;
-		margin-bottom: 30px;
+		padding: 29px 0;
+		background-color: transparent;
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
 	}
 	.pagination-container {
+		margin-top: 30px;
 		display: flex;
 		justify-content: space-between;
 	}
