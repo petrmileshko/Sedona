@@ -221,6 +221,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				border-radius: 4px;
 			}
 			.navigation-menu-item.button .navigation-menu-link {
+				flex-grow: 1;
 				margin: auto;
 				padding: 9px 15px;
 			}
