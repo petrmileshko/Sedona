@@ -142,32 +142,59 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			display: block;
 			padding: 20px 17px;
 		}
-		.navigation-link-active {
-			border-bottom: 2px solid #756257;
+		.navigation-menu-item {
+			position: relative;
 		}
+		.navigation-link-active::after {
+			position: absolute;
+			left: 17px;
+			right: 17px;
+			bottom: 0;
+			border-bottom:  2px solid #756257;
+			content: "";
+		}
+		.navigation-menu-link:hover {
+			color: #756257;
+		}
+		.navigation-menu-link:active {
+			color: rgba(117, 98, 87, 0.3);
+		}
+
 		.navigation-menu.user-menu {
 			min-width: 264px;
 			margin-left: auto;
 		}
-			.icon-search,
-			.icon-favorite {
-				position: relative;
-				display: block;
+			.navigation-menu-icons {
+				display: flex;
 				width: 42px;
 				height: 66px;
-				background-repeat: no-repeat;
-				background-position: 50% 50%;
+				padding: 0;
+				justify-content: center;
+				align-items: center;
 			}
-
-			.icon-search {
-				background-image: url('../images/btn-search.svg');
+			.icon-search
+			{
+				width: 20px;
+				height: 19px;
+				fill: #000;
 			}
-
 			.icon-favorite {
-				background-image: url('../images/btn-favorite.svg');
+				width: 19px;
+				height: 17px;
+				fill: #000;
 			}
-
+			.icon-search:hover,
+			.icon-favorite:hover {
+				fill: #756257;
+			}
+			.icon-search:active,
+			.icon-favorite:active {
+				opacity: 0.3;
+			}
 			.favorite-counter {
+				position: absolute;
+				top:15px;
+				left:24px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -180,7 +207,10 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				background-color: #7DB54F;
 				border-radius: 50%;
 			}
-			.navigation-menu-item.button {
+			.favorite-counter:active {
+				color: rgba(265, 265, 265, 0.3);
+			}
+			.navigation-menu-item.button{
 				display: flex;
 				margin-left: auto;
 				align-self: center;
@@ -194,7 +224,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				margin: auto;
 				padding: 9px 15px;
 			}
-
+			.navigation-menu-item.button .navigation-menu-link:hover {
+				color: inherit;
+			}
+			.navigation-menu-item.button .navigation-menu-link:active {
+				color: rgba(255, 255, 255, 0.3);
+			}
 
 /* Подвал сайта */
 .site-footer {
