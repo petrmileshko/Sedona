@@ -74,6 +74,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .footer-socials-links,
 .footer-contact-tel,
 .developer-link,
+.select-option,
 .pagination-link,
 .button {
 	text-decoration: none;
@@ -132,6 +133,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.logo-link{
 			display: flex;				/* Необходимо чтобы избавиться от нижнего отступа у img */
 			margin-right: 30px;
+			margin-bottom: -10px;
+			z-index: 1;
 		}
 		.navigation-menu {
 			display: flex;
@@ -228,16 +231,19 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			.navigation-menu-item.button .navigation-menu-link:hover {
 				color: inherit;
 				background-color: #615048;
+				border-radius: 4px;
 			}
 			.navigation-menu-item.button .navigation-menu-link:focus {
 				color: rgba(255, 255, 255, 1);
 				background-color: #615048;
 				outline: 3px solid #83B3D3;
+				border-radius: 4px;
 			}
 			.navigation-menu-item.button .navigation-menu-link:active {
 				outline: none;
 				background-color: #615048;
 				color: rgba(255, 255, 255, 0.3);
+				border-radius: 4px;
 			}
 
 /* Подвал сайта */
@@ -785,15 +791,76 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			}
 
 			/* Сортировка */
+			.select {
+				position: relative;
+				z-index: 1;
+			}
+			
 			.catalog-sorting {
 				width: 287px;
 				margin-right: 81px;
+			}
+			.select-button {
+				display: grid;
+				grid-template-columns: 1fr 50px;
+				padding: 10px 18px;
+				padding-right: 0;
 				font-size: 18px;
 				line-height: 23px;
 				color: #333333;
 				border: 2px solid #E6E6E6;
 				border-radius: 4px;
+				cursor: default;
+				user-select: none;
 			}
+			.select-button::-webkit-details-marker {
+				display: none;
+			}
+			.select-button::after {
+				content: "";
+
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+				background-image: url('/images/catalog/shevron-down.svg');
+			}
+			.select-button:hover {
+				border-color: #83B3D3;
+			}
+			.select-button:focus {
+				outline-color: #83B3D3;
+			}
+			.select-button:active {
+				color: rgba(51, 51, 51, 0.3);
+				outline: none;
+				border-color: #E6E6E6;
+			}
+			
+			.select[open] > .select-button::after {
+				transform: rotate(180deg);
+			}
+			.select-menu {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				right: 0;
+				font-size: 18px;
+				line-height: 23px;
+				color: #333333;
+				background-color: #fff;
+				border-radius: 4px;
+				box-shadow: 0 2px 2px 0 rgba(184, 181, 181, 0.4);
+			}
+			.select-item-active {
+				background-color: rgb(222, 222, 222);
+			}
+			.select-option {
+				display: block;
+				padding: 8px 18px;
+			}
+			.select-option:hover {
+				background-color: rgba(222, 222, 222,0.5);
+			}
+
 			.catalog-view {
 				display: flex;
 				justify-content: space-between;
@@ -807,8 +874,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						background-color: transparent;
 						background-repeat: no-repeat;
 						background-position: center center;
-						border: 2px solid #E6E6E6;
-						border-radius: 4px;
 					}
 					.catalog-view-item:first-child {
 						background-image: url('../images/catalog/btn-mode-tile.svg');
@@ -819,18 +884,25 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.catalog-view-item:last-child {
 						background-image: url('../images/catalog/btn-mode-list.svg');
 					}
-					.catalog-view-item.view-item-active {
-						border-color: #000;
-					}
-						.catalog-view-link::before {
-							content: "";
-							position: absolute;
-							top: 0;
-							left: 0;
-							bottom: 0;
-							right: 0;
+						.catalog-view-link {
+							display: block;
+							box-sizing: border-box;
+							min-width: 48px;
+							min-height: 48px;
+							border: 2px solid #E6E6E6;
+							border-radius: 4px;
 							cursor: pointer;
 						}
+						.catalog-view-link:hover {
+							border-color: #83B3D3;
+						}
+						.catalog-view-link:focus {
+							outline-color: #83B3D3;
+						}
+						.view-item-active > .catalog-view-link{
+							border-color: #000;
+						}
+
 
 	/* Список гостиниц  */
 	.hotel-list {
@@ -909,6 +981,30 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 							background: #F2F2F2;
 							border-radius: 4px;
 						}
+						.hotel-card-link.card-title:focus {
+							outline: none;
+						}
+						.hotel-card-link.card-image:hover {
+							opacity: 0.6;
+						}
+						.hotel-card-link.card-image:focus {
+							outline: 3px solid #83B3D3;
+						}
+						.hotel-card-link.card-image:active {
+							opacity: 0.3;
+						}
+						.hotel-card-more.button:hover {
+							background-color: #615048;
+						}
+						.hotel-card-favorite.button:hover {
+							background-color: #68A2CA;
+						}
+						.hotel-card-more.button:focus {
+							outline: 3px solid #83B3D3;
+						}
+						.hotel-card-favorite.button:focus {
+							outline: 3px solid #756257;
+						}
 
 	/* Пагинация */
 	.catalog-load-more.button {
@@ -920,6 +1016,17 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		font-size: 20px;
 		line-height: 26px;
 		background-color: #83B3D3;
+	}
+	.catalog-load-more.button:hover {
+		background-color: #68A2CA;
+	}
+	.catalog-load-more.button:focus {
+		outline: 3px solid #756257;
+	}
+	.hotel-card-more.button:active,
+	.hotel-card-favorite.button:active,
+	.catalog-load-more.button:active {
+		color: rgba(255, 255, 255, 0.3);
 	}
 	.devider-button-more {
 		margin-top: 34px;
@@ -943,9 +1050,11 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				line-height: 26px;
 			}
 					.pagination-link {
-						display: block;
+						display: flex;
 						width: 55px;
 						height: 55px;
+						justify-content: center;
+						align-items: center;
 						color: #fff;		
 						background: #83B3D3;
 						border-radius: 4px;
@@ -954,7 +1063,16 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						color: #000;
 						background: #F2F2F2;
 					}
-			.pagination-select {
+					.pagination-link:hover {
+						background-color: #68A2CA;
+					}
+					.pagination-link:focus {
+						outline: 3px solid #756257;
+					}
+					.pagination-link:active {
+						color: rgba(255, 255, 255, 0.3);
+					}
+			.select-wrapper {
 				display: flex;
 				justify-content: space-between;
 				min-width: 386px;
@@ -962,10 +1080,10 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				line-height: 23px;
 				color: #333333;
 			}
-				.pagination-select>p {
+				.select-wrapper>p {
 					min-width: 175px;
 				}
-				.select {
+				.pagination-select {
 					width: 160px;
 				}
 
