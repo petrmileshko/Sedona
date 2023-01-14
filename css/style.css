@@ -736,6 +736,13 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				margin-left: 100px;
 					width: 288px;
 			}
+			.filter-input-wrapper {
+				display: flex;
+				position: relative;
+				flex-wrap: wrap;
+				margin-bottom: 32px;
+				align-self: start;
+			}
 					.filter-item-label {
 						position: absolute;
 						top: 12px;
@@ -763,13 +770,43 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						border-radius: 4px;
 					}
 					.filter-item-input:last-of-type {
+						padding-left: 17px;
 						border-left: none;
 						border-top-left-radius: 0;
 						border-bottom-left-radius: 0;
 					}
 					.filter-item-input:first-of-type {
+						padding-left: 19px;
 						border-top-right-radius: 0;
 						border-bottom-right-radius: 0;
+					}
+					.range-scale {
+						width: 287px;
+						height: 4px;
+						background-color: rgba(0,0,0,0.3);
+					}
+					.range-bar {
+						display: flex;
+						justify-content: space-between;
+						height: 4px;
+						position: absolute;
+						background-color: #fff;
+					}
+					.range-toggle {
+						position: relative;
+						top: -8px;
+						width: 20px;
+						height: 20px;
+						background-color: #fff;
+						border: none;
+						border-radius: 5px;
+						cursor: pointer;
+					}
+					.value-min {
+					}
+					.visually-hidden {
+					}
+					.value-max {
 					}
 
 			.buttons-container {
