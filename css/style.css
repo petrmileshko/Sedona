@@ -76,6 +76,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .developer-link,
 .select-option,
 .pagination-link,
+.breadcrumps-link,
+.hotel-card-link,
 .button {
 	text-decoration: none;
 }
@@ -632,12 +634,14 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			font-size: 60px;
 			line-height: 78px
 		}
-
+		.breadcrumps-link:first-of-type {
+			padding: 3px 8px 3px 8px;
+		}
 		.icon-home {
-			display: inline-block;
-			width: 12px;
-			height: 12px;
-			background-image: url('../images/catalog/breadcramps-home.svg');
+			fill: #fff;
+		}
+		.icon-home:hover {
+			fill: rgba(255,255,255,0.6);
 		}
 
 		.breadcrumps-list {
@@ -645,13 +649,29 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			font-size: 16px;
 			line-height: 21px;
 		}
+		.breadcrumps-link {
+			display: inline-block;
+		}
+		.breadcrumps-link:hover {
+			color: rgba(255,255,255,0.6);
+		}
+		.breadcrumps-link:focus {
+			outline: 3px solid #83B3D3;
+			border-radius: 4px;
+		}
+		.breadcrumps-link:active {
+			color: rgba(255,255,255,0.3);
+		}
+		.breadcrumps-link:active > .icon-home {
+			fill: rgba(255,255,255,0.3);
+		}
 		.breadcrumps-item:not(:last-child)::after {
 			content: "";
 			display: inline-block;
 			width: 5px;
 			height: 8px;
 			margin-right: 10px;
-			margin-left: 11px;
+			margin-left: 3px;
 			background-image: url('../images/catalog/breadcramps-arrow.svg');
 		}
 
@@ -726,6 +746,15 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 												background-color: #3F5E72;
 												border-radius: 50%;
 												content: "";
+											}
+											.item-control:hover > .control-input[type="checkbox"] + .item-control-mark {
+												background-color: rgba(255, 255, 255, 0.6);
+											}
+											.control-input:focus + .item-control-mark {
+												outline: 3px solid #83B3D3;
+											}
+											.item-control:active > .control-input[type="checkbox"] + .item-control-mark {
+												background-color: rgba(255, 255, 255, 0.3);
 											}
 											
 			.catalog-filters-group.filters-group-large {
