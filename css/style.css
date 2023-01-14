@@ -116,7 +116,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .hotels-found-text,
 .hotel-card-more.button,
 .hotel-card-favorite.button,
-.hotel-rating-popularity {
+.hotel-rating-popularity,
+.modal-title {
 	text-transform: uppercase;
 }
 
@@ -1218,7 +1219,33 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	background-color: inherit;
 	background-image: none;
 }
-
 .catalog+.subscribe-newsletter .subscribe-form.field-input {
 	background: #F2F2F2;
+}
+
+/* Модальные окна*/
+
+.modal-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color:  rgba(242, 242, 242, 0.8);
+	z-index: 1;
+}
+.modal {
+	position: absolute;
+	width: 715px;
+	top: 50%;
+	left: 50%;
+	padding: 54px 70px 70px 70px;
+	transform: translate(-50%,-50%);
+	background-color: #FFFFFF;
+	box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+	border-radius: 30px;
+}
+.modal-title {
+	font-size: 30px;
+	line-height: 40px;
 }
