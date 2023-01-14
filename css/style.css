@@ -693,15 +693,39 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 									.item-control {
 										display: flex;
 									}
-											.item-control .item-control-mark {
-												display: block;
+											.item-control-mark {
+												position: relative;
 												width: 20px;
 												height: 20px;
 												margin-right: 19px;
 												background-color: #fff;
+												border-radius: 4px;
 											}
-											.item-control-mark.radio-button {
+											.control-input[type="radio"] + .item-control-mark {
 												border-radius: 50%;
+											}
+											.control-input[type="checkbox"]:checked + .item-control-mark::before {
+												position: absolute;
+												width: 12px;
+												height: 10px;
+												top: 50%;
+												left: 50%;
+												transform: translate(-50%,-50%);
+												background-image: url('/images/catalog/btn-tick.svg');
+												background-position: center;
+												background-repeat: no-repeat;
+												content: "";
+											}
+											.control-input[type="radio"]:checked + .item-control-mark::before {
+												position: absolute;
+												width: 10px;
+												height: 10px;
+												top: 50%;
+												left: 50%;
+												transform: translate(-50%,-50%);
+												background-color: #3F5E72;
+												border-radius: 50%;
+												content: "";
 											}
 											
 			.catalog-filters-group.filters-group-large {
