@@ -1225,7 +1225,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Модальные окна*/
 
-.modal-container {
+.modal-container {	/* Контейнер для модальных окон и он же оверлей*/
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -1234,8 +1234,10 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	background-color:  rgba(242, 242, 242, 0.8);
 	z-index: 1;
 }
-.modal {
+.modal {		/* Модальное окно*/
 	position: absolute;
+	display: flex;
+	flex-direction: column;
 	width: 715px;
 	top: 50%;
 	left: 50%;
@@ -1245,7 +1247,26 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 	border-radius: 30px;
 }
-.modal-title {
+
+.modal-title {		/* Заголовок модального окна */
+	margin-bottom: 54px;
 	font-size: 30px;
 	line-height: 40px;
+}
+
+.modal-close-button {	/* кнопка закрытия модального окна */
+	position: absolute;
+	width: 53px;
+	height: 53px;
+	top: 54px;
+	right: 70px;
+	background-color: #F2F2F2;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.cross-toggle {			/* Иконка крестик для кнопки закрытия окна */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
