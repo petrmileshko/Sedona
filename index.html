@@ -278,7 +278,8 @@
 			<h1 class="modal-title">Поиск гостиницы в Седоне</h1>
 
 			<a class="modal-close-button button">
-				<svg class="cross-toggle" area-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+				<svg class="cross-toggle" area-hidden="true" focusable="false" width="13" height="13"
+					xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#a)">
 						<path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"
 							fill="#000" />
@@ -295,31 +296,65 @@
 				<label class="form-serach-label">
 					Дата заезда:
 					<input class="search-date" type="date" name="date-checkin" value="2020-04-27">
-				</label>
-				<span class="response-message">Мы не можем отправить вас в прошлое.</span>
-				<label class="form-serach-label">
-					Дата выезда:
-					<input class="search-date" type="date" name="date-checkout" value="2021-09-01">
-				</label>
-				<span class="response-message">На эти даты есть свободные номера. Пока есть.</span>
-				<label class="form-serach-label">
-					Взрослые:
-					<input class="search-persons" type="number" name="persons" value="2">
+					<span class="response-message wrong-date">Мы не можем отправить вас в прошлое.</span>
 				</label>
 
 				<label class="form-serach-label">
-					Дети:
-					<button class="search-info" type="button"><span class="visually-hidden">Укажите количество
-							детей</span></button>
-					<div class="info-popover">
-						<div class="info-content">
-							Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
-							бесплатно.
-						</div>
-					</div>
-					<input class="search-children" type="number" name="children" value="1">
+					Дата выезда:
+					<input class="search-date" type="date" name="date-checkout" value="2021-09-01">
+					<span class="response-message">На эти даты есть свободные номера. Пока есть.</span>
 				</label>
-				<button type="submit">Найти</button>
+
+				<div class="persons-wrapper">
+
+					<label class="form-serach-label">
+						Взрослые:
+						<input class="search-persons" type="number" name="persons" value="2">
+						<span class="minus-spin">
+							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="1"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0v1h13V0H0Z" /></svg>
+						</span>
+						<span class="plus-spin">
+							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#a)">
+									<path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+								</g>
+							</svg>
+						</span>
+					</label>
+
+					<label class="form-serach-label">
+						<div class="children-wrapper">
+							<label for="children">Дети:</label>
+							<button class="search-info" type="button"><span class="visually-hidden">Укажите количество
+									детей</span></button>
+						</div>
+
+						<div class="info-popover">
+							<div class="info-content">
+								Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+								размещаются
+								бесплатно.
+							</div>
+						</div>
+						<input class="search-children" id="children" type="number" name="children" value="1">
+						<span class="minus-spin">
+							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="1"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0v1h13V0H0Z" /></svg>
+						</span>
+						<span class="plus-spin">
+							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#a)">
+									<path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+								</g>
+							</svg>
+						</span>
+					</label>
+
+				</div>
+				<button class="form-search-button" type="submit">Найти</button>
 			</form>
 
 		</div>

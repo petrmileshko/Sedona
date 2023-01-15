@@ -1249,7 +1249,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 }
 
 .modal-title {		/* Заголовок модального окна */
-	margin-bottom: 54px;
+	margin-bottom: 59px;
+	margin-top: 8px;
 	font-size: 30px;
 	line-height: 40px;
 }
@@ -1269,4 +1270,120 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+}
+
+/* Контент модального окна Поиск Гостиниц */
+.form-search {
+	display: flex;
+	flex-direction: column;
+	row-gap: 11px;
+}
+.form-serach-label {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 40px;
+}
+.response-message {
+	width: 420px;
+	height: 29px;
+	margin-left: auto;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+}
+.wrong-date {
+	color: #FF5757;
+}
+.form-search input {
+	font: inherit;
+	margin-left: auto;
+	background-color: #F2F2F2;
+	border: none;
+	border-radius: 4px;
+}
+.form-search input[type="date"] {
+	width: 420px;
+	padding: 4px 0 4px 19px;
+}
+.children-wrapper {
+	display: flex;
+	align-items: center;
+	padding-left: 56px;
+}
+.persons-wrapper {
+	display: flex;
+}
+.persons-wrapper .form-serach-label {
+	width: 288px;
+}
+.form-search input[type="number"] {
+	position: relative;
+	padding: 5px 0;
+	width: 133px;
+	text-align: center;
+	appearance: textfield;
+}
+.form-search input[type="number"]::-webkit-outer-spin-button,
+.form-search input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+.minus-spin,
+.plus-spin {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	width: 13px;
+	height: 13px;
+	background-color: transparent;
+	cursor: pointer;
+}
+.minus-spin {
+	top: 19px;
+	left: 176px;
+}
+.plus-spin {
+	top: 19px;
+	right: 21px;
+}
+.toggle-icon {
+	opacity: 0.3;
+}
+.minus-spin:hover > .toggle-icon,
+.plus-spin:hover > .toggle-icon {
+	opacity: 1;
+}
+.search-info {
+	width: 25px;
+	height: 25px;
+	margin-left: 10.5px;
+	border: none;
+	background-color: #83B3D3;
+	border-radius: 50%;
+	background-image: url('/images/modal/tool-tip-icon.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.form-search-button {
+	margin-top: 29px;
+	padding: 10px 0;
+	font: inherit;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+	background-color: #83B3D3;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/* Всплывающие окна */
+.info-content {
+	display: none;
 }
