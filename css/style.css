@@ -1272,20 +1272,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .modal-close-button:hover {
 background-color: #E6E6E6;
 }
-.modal-close-button:focus,
-.form-search input:focus {
+.modal-close-button:focus:not(:active) {
 	background-color: #E6E6E6;
 	outline: 3px solid #83B3D3;
 }
 .modal-close-button:active > .cross-toggle {
 	opacity: 0.3;
-}
-.form-search input:hover {
-	background-color: #E6E6E6;
-}
-.form-search input:active {
-	background-color: #fff;
-	outline: 2px solid #000000;
 }
 .cross-toggle {			/* Иконка крестик для кнопки закрытия окна */
 	position: absolute;
@@ -1320,6 +1312,7 @@ background-color: #E6E6E6;
 .wrong-date {
 	color: #FF5757;
 }
+
 .form-search input {
 	font: inherit;
 	margin-left: auto;
@@ -1327,9 +1320,24 @@ background-color: #E6E6E6;
 	border: none;
 	border-radius: 4px;
 }
-.form-search input[type="date"] {
+.form-search input:hover {
+	background-color: #E6E6E6;
+}
+.form-search input:active {
+	background-color: #fff;
+	outline: 2px solid #000000;
+}
+.form-search input:focus:not(:active) {
+	background-color: #E6E6E6;
+	outline: 3px solid #83B3D3;
+}
+
+.form-search input[type="text"] {
 	width: 420px;
 	padding: 4px 0 4px 19px;
+	background-repeat: no-repeat;
+	background-position: right 19px top 18px;
+	background-image: url('/images/modal/calendar-icon.svg');
 }
 .children-wrapper {
 	display: flex;
@@ -1375,8 +1383,8 @@ background-color: #E6E6E6;
 	top: 19px;
 	right: 21px;
 }
-.minus-spin:focus,
-.plus-spin:focus {
+.minus-spin:focus:not(:active),
+.plus-spin:focus:not(:active) {
 	outline: 3px solid #83B3D3;
 }
 .toggle-icon {
@@ -1426,7 +1434,7 @@ background-color: #E6E6E6;
 .form-search-button:hover {
 	background-color: #68A2CA;
 }
-.form-search-button:focus {
+.form-search-button:focus:not(:active) {
 	outline: 3px solid #756257;
 }
 .form-search-button:active {
