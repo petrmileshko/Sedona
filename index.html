@@ -275,7 +275,7 @@
 
 	<div class="modal-container modal-off">
 		<div class="modal">
-			<h1 class="modal-title">Поиск гостиницы в Седоне</h1>
+			<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
 			<button class="modal-close-button" type="button">
 				<svg class="cross-toggle" aria-hidden="true" focusable="false" width="13" height="13"
@@ -306,10 +306,9 @@
 				</label>
 
 				<div class="persons-wrapper">
-
-					<label class="form-serach-label">
-						Взрослые:
-						<input class="search-persons" type="number" name="persons" value="2" min="0" step="1">
+					<div class="form-serach-label">
+						<label for="persons">Взрослые:</label>
+						<input class="search-persons" type="number" id="persons" name="persons" value="2" min="0" step="1">
 						<button class="minus-spin" type="button">
 							<svg class="toggle-icon" aria-hidden="true" focusable="false" width="13" height="1"
 								xmlns="http://www.w3.org/2000/svg">
@@ -323,9 +322,9 @@
 								</g>
 							</svg>
 						</button>
-					</label>
+					</div>
 
-					<label class="form-serach-label">
+					<div class="form-serach-label">
 						<div class="children-wrapper">
 							<label for="children">Дети:</label>
 							<span class="search-info"><span class="visually-hidden">Количество
@@ -354,7 +353,7 @@
 								</g>
 							</svg>
 						</button>
-					</label>
+					</div>
 
 				</div>
 				<button class="form-search-button" type="submit">Найти</button>
