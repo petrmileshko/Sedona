@@ -494,21 +494,21 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						width: 75px;
 						height: 72px;
 						top: 89px;
-						background-image: url('./images/index/icon-housing.svg');
+						background-image: url('../images/index/icon-housing.svg');
 						background-size: 75px 72px;
 					}
 					.advantages-sublist-item:nth-of-type(2)::before {
 						width: 74px;
 						height: 70px;
 						top: 91px;
-						background-image: url('./images/index/icon-burger.svg');
+						background-image: url('../images/index/icon-burger.svg');
 						background-size: 74px 70px;
 					}
 					.advantages-sublist-item:nth-of-type(3)::before {
 						width: 64px;
 						height: 76px;
 						top: 85px;
-						background-image: url('./images/index/icon-souvenir.svg');
+						background-image: url('../images/index/icon-souvenir.svg');
 						background-size: 64px 76px;
 					}
 
@@ -724,7 +724,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 												top: 50%;
 												left: 50%;
 												transform: translate(-50%,-50%);
-												background-image: url('./images/catalog/btn-tick.svg');
+												background-image: url('../images/catalog/btn-tick.svg');
 												background-position: center;
 												background-repeat: no-repeat;
 												content: "";
@@ -945,7 +945,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 				background-position: 50% 50%;
 				background-repeat: no-repeat;
-				background-image: url('./images/catalog/shevron-down.svg');
+				background-image: url('../images/catalog/shevron-down.svg');
 			}
 			.select-button:hover {
 				border-color: #83B3D3;
@@ -1337,7 +1337,7 @@ background-color: #E6E6E6;
 	padding: 4px 0 4px 19px;
 	background-repeat: no-repeat;
 	background-position: right 19px top 18px;
-	background-image: url('./images/modal/calendar-icon.svg');
+	background-image: url('../images/modal/calendar-icon.svg');
 }
 .children-wrapper {
 	display: flex;
@@ -1408,7 +1408,7 @@ background-color: #E6E6E6;
 	border: none;
 	background-color: #83B3D3;
 	border-radius: 50%;
-	background-image: url('./images/modal/tool-tip-icon.svg');
+	background-image: url('../images/modal/tool-tip-icon.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 }
