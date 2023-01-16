@@ -1274,10 +1274,14 @@ background-color: #E6E6E6;
 }
 .modal-close-button:focus,
 .form-search input:focus {
+	background-color: #E6E6E6;
 	outline: 3px solid #83B3D3;
 }
 .modal-close-button:active > .cross-toggle {
 	opacity: 0.3;
+}
+.form-search input:hover {
+	background-color: #E6E6E6;
 }
 .form-search input:active {
 	background-color: #fff;
@@ -1357,7 +1361,10 @@ background-color: #E6E6E6;
 	align-items: center;
 	width: 13px;
 	height: 13px;
+	padding: 0;
+	margin: 0;
 	background-color: transparent;
+	border: none;
 	cursor: pointer;
 }
 .minus-spin {
@@ -1368,6 +1375,10 @@ background-color: #E6E6E6;
 	top: 19px;
 	right: 21px;
 }
+.minus-spin:focus,
+.plus-spin:focus {
+	outline: 3px solid #83B3D3;
+}
 .toggle-icon {
 	opacity: 0.3;
 }
@@ -1375,6 +1386,11 @@ background-color: #E6E6E6;
 .plus-spin:hover > .toggle-icon {
 	opacity: 1;
 }
+.minus-spin:active > .toggle-icon,
+.plus-spin:active > .toggle-icon {
+	opacity: 0.2;
+}
+
 .children-wrapper > label {
 	margin-right: 15px;
 }
@@ -1387,6 +1403,9 @@ background-color: #E6E6E6;
 	background-image: url('/images/modal/tool-tip-icon.svg');
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.search-info:hover {
+	background-color: #68A2CA;
 }
 
 .form-search-button {
