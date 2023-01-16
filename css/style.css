@@ -235,7 +235,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				background-color: #615048;
 				border-radius: 4px;
 			}
-			.navigation-menu-item.button .navigation-menu-link:focus {
+			.navigation-menu-item.button .navigation-menu-link:focus:not(:active) {
 				color: rgba(255, 255, 255, 1);
 				background-color: #615048;
 				outline: 3px solid #83B3D3;
@@ -270,7 +270,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					height: 40px;
 					padding-top: 1px;
 				}
-				.footer-socials-links:focus {
+				.footer-socials-links:focus:not(:active) {
 					outline: 3px solid #83B3D3;
 					border-radius: 10px;
 				}
@@ -319,7 +319,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.footer-contact-tel:hover {
 			color: #756257;
 		}
-		.footer-contact-tel:focus {
+		.footer-contact-tel:focus:not(:active) {
 			color: #756257;
 			outline: 3px solid #83B3D3;
 			border-radius: 10px;
@@ -347,7 +347,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				.developer-link:hover svg {
 					fill: #756257;
 				}
-				.developer-link:focus {
+				.developer-link:focus:not(:active) {
 					outline: 3px solid #83B3D3;
 					border-radius: 10px;
 				}
@@ -538,7 +538,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.search.button:hover {
 			background-color: #615048;
 		}
-		.search.button:focus {
+		.search.button:focus:not(:active) {
 			color: rgba(255, 255, 255, 1);
 			background-color: #615048;
 			outline: 3px solid #83B3D3;
@@ -584,7 +584,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				.subscribe-form.field-input:hover {
 					background-color:  #E6E6E6;
 				}
-				.subscribe-form.field-input:focus {
+				.subscribe-form.field-input:focus:not(:active) {
 					background-color:  #E6E6E6;
 					/* border: 3px solid #83B3D3; */
 					/* box-shadow: inset 0 0 0 3px #83B3D3; */
@@ -606,7 +606,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				.subsribe-form.button:hover {
 					background-color: #68A2CA;
 				}
-				.subsribe-form.button:focus {
+				.subsribe-form.button:focus:not(:active) {
 					background-color: #68A2CA;
 				/* 	border: 3px solid #756257; */
 					box-shadow: inset 0 0 0 3px #756257;
@@ -648,7 +648,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.breadcrumps-link:hover {
 			color: rgba(255,255,255,0.6);
 		}
-		.breadcrumps-link:focus {
+		.breadcrumps-link:focus:not(:active) {
 			outline: 3px solid #83B3D3;
 			border-radius: 4px;
 		}
@@ -806,7 +806,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.filter-item-input:hover {
 						border-color: rgba(255, 255, 255, 0.6);
 					}
-					.filter-item-input:focus {
+					.filter-item-input:focus:not(:active) {
 						outline: 3px solid #81B3D2;
 						box-shadow: inset 0px 0px 0px 3px #81B3D2;
 					}
@@ -839,7 +839,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.range-toggle:hover {
 						box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 					}
-					.range-toggle:focus {
+					.range-toggle:focus:not(:active) {
 						outline: 3px solid #81B3D2;
 						box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 					}
@@ -867,7 +867,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.catalog-filters-submit.button:hover {
 						background-color: #68A2CA;
 					}
-					.catalog-filters-submit.button:focus {
+					.catalog-filters-submit.button:focus:not(:active) {
 						outline: 3px solid #FFFFFF;
 						border-radius: 4px;
 					}
@@ -887,7 +887,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.catalog-filters-reset.button:hover {
 						color: rgba(255, 255, 255, 0.6);
 					}
-					.catalog-filters-reset.button:focus {
+					.catalog-filters-reset.button:focus:not(:active) {
 						outline: 3px solid #83B3D3;
 						border-radius: 4px;
 					}
