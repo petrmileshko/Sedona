@@ -273,11 +273,11 @@
 
 	</footer>
 
-	<div class="modal-container">
+	<div class="modal-container modal-off">
 		<div class="modal">
 			<h1 class="modal-title">Поиск гостиницы в Седоне</h1>
 
-			<a class="modal-close-button button">
+			<button class="modal-close-button" type="button">
 				<svg class="cross-toggle" area-hidden="true" focusable="false" width="13" height="13"
 					xmlns="http://www.w3.org/2000/svg">
 					<g clip-path="url(#a)">
@@ -290,7 +290,7 @@
 						</clipPath>
 					</defs>
 				</svg>
-			</a>
+			</button>
 
 			<form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
 				<label class="form-serach-label">
@@ -316,7 +316,8 @@
 								<path d="M0 0v1h13V0H0Z" /></svg>
 						</span>
 						<span class="plus-spin">
-							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="13"
+								xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#a)">
 									<path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
 								</g>
@@ -327,15 +328,16 @@
 					<label class="form-serach-label">
 						<div class="children-wrapper">
 							<label for="children">Дети:</label>
-							<button class="search-info" type="button"><span class="visually-hidden">Укажите количество
-									детей</span></button>
-						</div>
-
-						<div class="info-popover">
-							<div class="info-content">
-								Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
-								размещаются
-								бесплатно.
+							<span class="search-info" type="button"><span class="visually-hidden">Количество
+									детей</span></span>
+							<div class="info-popover">
+								<svg width="19" height="9" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5 0 19 9H0l9.5-9Z" fill="#333" /></svg>
+								<div class="info-content">
+									Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+									размещаются
+									бесплатно.
+								</div>
 							</div>
 						</div>
 						<input class="search-children" id="children" type="number" name="children" value="1">
@@ -345,7 +347,8 @@
 								<path d="M0 0v1h13V0H0Z" /></svg>
 						</span>
 						<span class="plus-spin">
-							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+							<svg class="toggle-icon" area-hidden="true" focusable="false" width="13" height="13"
+								xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#a)">
 									<path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
 								</g>

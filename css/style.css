@@ -1234,6 +1234,9 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	background-color:  rgba(242, 242, 242, 0.8);
 	z-index: 1;
 }
+.modal-off {
+	display: none;
+}
 .modal {		/* Модальное окно*/
 	position: absolute;
 	display: flex;
@@ -1262,8 +1265,23 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	top: 54px;
 	right: 70px;
 	background-color: #F2F2F2;
+	border: none;
 	border-radius: 50%;
 	cursor: pointer;
+}
+.modal-close-button:hover {
+background-color: #E6E6E6;
+}
+.modal-close-button:focus,
+.form-search input:focus {
+	outline: 3px solid #83B3D3;
+}
+.modal-close-button:active > .cross-toggle {
+	opacity: 0.3;
+}
+.form-search input:active {
+	background-color: #fff;
+	outline: 2px solid #000000;
 }
 .cross-toggle {			/* Иконка крестик для кнопки закрытия окна */
 	position: absolute;
@@ -1357,10 +1375,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .plus-spin:hover > .toggle-icon {
 	opacity: 1;
 }
+.children-wrapper > label {
+	margin-right: 15px;
+}
 .search-info {
 	width: 25px;
 	height: 25px;
-	margin-left: 10.5px;
 	border: none;
 	background-color: #83B3D3;
 	border-radius: 50%;
@@ -1368,6 +1388,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 .form-search-button {
 	margin-top: 29px;
 	padding: 10px 0;
@@ -1383,7 +1404,43 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	border-radius: 10px;
 	cursor: pointer;
 }
+.form-search-button:hover {
+	background-color: #68A2CA;
+}
+.form-search-button:focus {
+	outline: 3px solid #756257;
+}
+.form-search-button:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+		
 /* Всплывающие окна */
-.info-content {
+
+.info-popover {
+	position: absolute;
 	display: none;
+	flex-direction: column;
+	align-items: center;
+	width: 256px;
+	top: 40px;
+	left: 0;
+	padding-top: 3.5px;
+	z-index: 1;
+}
+.search-info:hover + .info-popover {
+	display: flex;
+}
+
+.triangle-decor {
+	display: block;
+}
+.info-content {
+	padding: 15px 18px 15px 22px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	background-color: #333333;
+	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
 }
