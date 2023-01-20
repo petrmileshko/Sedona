@@ -468,9 +468,13 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				display: flex;
 				align-items: center;
 				flex-direction: column;
+			}
+			.advantages-item-number {
 				counter-increment: list;
 			}
-
+			.advantages-item-number::before {
+				content: '— №'counters(list,'')' —';
+			}
 			.advantages-item,
 			.advantages-sublist-item {
 				min-height: 384px;
