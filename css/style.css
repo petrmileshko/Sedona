@@ -343,8 +343,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			width: 361px;
-			height: 70px;
+			min-width: 361px;
+			min-height: 70px;
 			font-size: 40px;
 			line-height: 40px;
 		}
@@ -461,7 +461,15 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	.advantages-list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
+		counter-reset: list;
 	}
+			.advantages-item {
+				position: relative;
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				counter-increment: list;
+			}
 
 			.advantages-item,
 			.advantages-sublist-item {
@@ -486,32 +494,44 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						color: #ffffff;
 						background: #83b3d3;
 					}
-
+					.description-container {
+						padding: 20px;
+						max-width: 400px;
+						min-width: 400px;
+					}
 					.advantages-item__large:nth-of-type(even) > .advantages-item-info {
 						flex-direction: row-reverse;
 					}
 
 						.advantages-item-picture {
 							object-fit: cover;
+							height: auto;
 						}
 
-							.advantages-item-title {
-								min-width: 400px;
+							 .advantages-item-title {
 								margin-top: 98px;
 								font-weight: 700;
 								font-size: 24px;
 								line-height: 28px;
 							}
-
+							.advantages-item__large .advantages-item-title {
+								margin-top: 77px;
+								font-weight: 700;
+								font-size: 24px;
+								line-height: 28px;
+							}
 							.advantages-item-number {
 								margin-top: 29px;
 							}
 
 							.advantages-item-description {
-								width: 250px;
+								max-width: 250px;
 								margin-left: auto;
 								margin-right: auto;
 								margin-top: 30px;
+							}
+							.advantages-item__large .advantages-item-description {
+								max-width: 220px;
 							}
 
 			.advantages-sublist {
@@ -524,11 +544,18 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 				.advantages-sublist-item {
 					position: relative;
+					display: flex;			/*		test of oferflow */
+					flex-direction: column;
+					align-items: center;
+					color: #000000;
 				}
 
+				.advantages-sublist .advantages-item-description {
+					max-width: 250px;
+				}
 				.advantages-sublist-item::before {
-					position: absolute;
-					left: 163px;
+					/* position: absolute; */
+					/* left: 163px; */
 					background-repeat: no-repeat;
 					background-position: center;
 					content: "";
@@ -537,13 +564,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.advantages-sublist-item .advantages-item-title {
 						min-width: 250px;
 						margin: 0 auto;
-						margin-top: 184px;
+						margin-top: 23px;
 					}
 
 					.advantages-sublist-item .advantages-item-description {
-						padding-bottom: 10px;
 						margin-top: 20px;
-						margin-bottom: 79px;
+						margin-bottom: 69px;
 					}
 
 					.advantages-sublist-item:nth-of-type(odd) {
@@ -554,26 +580,26 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						background-color: #ffffff;
 					}
 
-					.advantages-sublist-item:nth-of-type(1)::before {
-						top: 89px;
+					.advantages-sublist-item:nth-of-type(1n)::before {
 						width: 75px;
 						height: 72px;
+						margin-top: 89px;
 						background-image: url("../images/index/icon-housing.svg");
 						background-size: 75px 72px;
 					}
 
-					.advantages-sublist-item:nth-of-type(2)::before {
-						top: 91px;
+					.advantages-sublist-item:nth-of-type(2n)::before {
 						width: 74px;
 						height: 70px;
+						margin-top: 91px;
 						background-image: url("../images/index/icon-burger.svg");
 						background-size: 74px 70px;
 					}
 
-					.advantages-sublist-item:nth-of-type(3)::before {
-						top: 85px;
+					.advantages-sublist-item:nth-of-type(3n)::before {
 						width: 64px;
 						height: 76px;
+						margin-top: 85px;
 						background-image: url("../images/index/icon-souvenir.svg");
 						background-size: 64px 76px;
 					}
