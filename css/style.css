@@ -470,12 +470,15 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				align-items: center;
 				flex-direction: column;
 			}
+
 			.advantages-item-number {
 				counter-increment: list;
 			}
+
 			.advantages-item-number::before {
 				content: '— №'counters(list,'')' —';
 			}
+
 			.advantages-item,
 			.advantages-sublist-item {
 				min-height: 384px;
@@ -518,13 +521,16 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 								font-weight: 700;
 								font-size: 24px;
 								line-height: 28px;
+								word-break: break-word;
 							}
+
 							.advantages-item__large .advantages-item-title {
 								margin-top: 77px;
 								font-weight: 700;
 								font-size: 24px;
 								line-height: 28px;
 							}
+
 							.advantages-item-number {
 								margin-top: 29px;
 							}
@@ -535,6 +541,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 								margin-right: auto;
 								margin-top: 30px;
 							}
+
 							.advantages-item__large .advantages-item-description {
 								max-width: 220px;
 							}
@@ -549,7 +556,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 				.advantages-sublist-item {
 					position: relative;
-					display: flex;			/*		test of oferflow */
+					display: flex;
 					flex-direction: column;
 					align-items: center;
 					color: #000000;
@@ -558,9 +565,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				.advantages-sublist .advantages-item-description {
 					max-width: 250px;
 				}
+
 				.advantages-sublist-item::before {
-					/* position: absolute; */
-					/* left: 163px; */
 					background-repeat: no-repeat;
 					background-position: center;
 					content: "";
@@ -704,8 +710,13 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 				.subscribe-form.field-input:invalid {
 					background-color:  #ffffff;
-					border: px solid #FF5757;
+					border: 2px solid #FF5757;
 					outline: none;
+				}
+
+				.subscribe-form.field-input:disabled {
+					color: #333333;
+					background-color: rgba(255, 255, 255, 0.6);
 				}
 
 				.subsribe-form.button {
@@ -731,6 +742,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					color: rgba(255,255,255, 0.3);
 				}
 
+				.subsribe-form.button:disabled {
+					outline: none;
+					color: #333333;
+					background-color: rgb(107, 105, 105);
+					cursor: auto;
+				}
 
 /* Страница Каталога */
 		.page-heading {
@@ -844,6 +861,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 												margin-right: 19px;
 												background-color: #ffffff;
 												border-radius: 4px;
+												cursor: pointer;
 											}
 
 											.control-input[type="radio"] + .item-control-mark {
@@ -875,7 +893,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 												content: "";
 											}
 											
-											.item-control:hover > .control-input[type="checkbox"] + .item-control-mark {
+											.item-control:hover:not(:disabled) > .control-input[type="checkbox"] + .item-control-mark,
+											.item-control:hover:not(:disabled) > .control-input[type="radio"] + .item-control-mark {
 												background-color: rgba(255, 255, 255, 0.6);
 											}
 
@@ -883,8 +902,14 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 												outline: 3px solid #83b3d3;
 											}
 
-											.item-control:active > .control-input[type="checkbox"] + .item-control-mark {
+											.item-control:active:not(:disabled) > .control-input[type="checkbox"] + .item-control-mark,
+											.item-control:active:not(:disabled) > .control-input[type="radio"] + .item-control-mark {
 												background-color: rgba(255, 255, 255, 0.3);
+											}
+											.control-input:disabled + .item-control-mark {
+												color: #333333;
+												background-color: rgba(255, 255, 255, 0.6);
+												cursor: auto;
 											}
 
 			.catalog-filters-group.filters-group-large {
@@ -960,7 +985,10 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					.filter-item-input:active {
 						background-color: #756257;
 					}
-					
+					.filter-item-input:disabled {
+						color: #333333;
+						background-color: rgba(255, 255, 255, 0.6);
+					}
 					.range-scale {
 						width: 287px;
 						height: 4px;
@@ -999,6 +1027,13 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						outline: 2px solid #81b3d2;
 						box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 					}
+
+					.range-toggle:disabled {
+						outline: none;
+						color: #333333;
+						background-color: rgb(107, 105, 105);
+						cursor: auto;
+				}
 				
 			.buttons-container {
 				display: flex;
@@ -1018,7 +1053,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						border-radius: 4px;
 					}
 
-					.catalog-filters-submit.button:hover {
+					.catalog-filters-submit.button:hover:not(:disabled) {
 						background-color: #68a2ca;
 					}
 
@@ -1032,6 +1067,13 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						background-color: rgba(255, 255, 255, 0.3);
 					}
 
+					.catalog-filters-submit:disabled {
+						outline: none;
+						color: #333333;
+						background-color: rgb(107, 105, 105);
+						cursor: auto;
+					}
+				
 					.catalog-filters-reset.button {
 						width: 100px;
 						height: 32px;
@@ -1042,7 +1084,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						background-color: transparent;
 					}
 
-					.catalog-filters-reset.button:hover {
+					.catalog-filters-reset.button:hover:not(:disabled) {
 						color: rgba(255, 255, 255, 0.6);
 					}
 
@@ -1051,10 +1093,16 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 						border-radius: 4px;
 					}
 
-					.catalog-filters-reset.button:active {
+					.catalog-filters-reset.button:active:not(:disabled) {
 						color: rgba(255, 255, 255, 0.3);
 					}
 
+					.catalog-filters-reset.button:disabled {
+						outline: none;
+						color: #333333;
+						background-color: rgb(107, 105, 105);
+						cursor: auto;
+					}
 
 /* Секция списка гостиниц и сортировки */
 .catalog {
@@ -1357,6 +1405,13 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	.hotel-card-favorite.button:active,
 	.catalog-load-more.button:active {
 		color: rgba(255, 255, 255, 0.3);
+	}
+
+	.catalog-load-more.button:disabled {
+		outline: none;
+		color: #333333;
+		background-color: rgb(107, 105, 105);
+		cursor: auto;
 	}
 
 	.devider-button-more {
