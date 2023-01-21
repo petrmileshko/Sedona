@@ -158,6 +158,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.navigation-menu-link {
 			display: block;
 			padding: 20px 17px;
+			word-break: break-word;
 		}
 
 		.navigation-menu-item {
@@ -680,6 +681,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 		.subscribe-newsletter-title.text-title {
 			margin-bottom: 29px;
+			word-break: break-word;
 		}
 
 		.subscribe-newsletter-description {
@@ -687,6 +689,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			margin-bottom: 46px;
 			font-size: 22px;
 			line-height: 26px;
+			word-break: break-word;
 		}
 
 		.subscribe-form {
@@ -1294,6 +1297,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					font-weight: 700;
 					font-size: 24px;
 					line-height: 31px;
+					word-break: break-word;
 				}
 
 		.hotel-info-type,
