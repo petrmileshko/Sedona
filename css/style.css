@@ -408,6 +408,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 /* Секция Введение */ /* Главная Страница */
 .intro {
 	height: 485px;
+	background-color: #756257;
 	background-image: url("../images/index/bg-index.jpg") ;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -657,7 +658,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	padding: 94px 200px;
 	text-align: center;
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #756257;
 	background-image: url("../images/index/bg-newsletter.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -794,7 +795,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .bg-container {
 	padding: 30px 72px 83px 71px;
 	color: #ffffff;
-	background-color: #000000;
+	background-color: #756257;
 	background-image: url("../images/catalog/bg-catalog.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
