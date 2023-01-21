@@ -488,6 +488,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	.advantages-sublist-item {
 		min-height: 384px;
 		min-width: 400px;
+		padding: 0 20px;
 	}
 
 	.advantages-item__large {
@@ -545,6 +546,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 30px;
+			word-break: break-word;
 		}
 
 		.advantages-item__large .advantages-item-description {
@@ -563,6 +565,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			position: relative;
 			display: flex;
 			flex-direction: column;
+			width: 400px;
 			align-items: center;
 			color: #000000;
 		}
@@ -829,7 +832,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 	.catalog-filters {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 	}
 
 	.catalog-filters-group {
