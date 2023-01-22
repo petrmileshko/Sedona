@@ -1325,7 +1325,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 		.hotel-card-ratings {
 			display: flex;
-			flex-wrap: wrap;
 			grid-column: 1 /-1;
 			align-self: end;
 			gap: 49px;
@@ -1336,6 +1335,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 			.hotel-rating-stars {
 				display: flex;
+				flex-wrap: wrap;
 				gap: 5px;
 			}
 
@@ -1349,7 +1349,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			}
 
 			.hotel-rating-popularity {
-				width: 160px;
+				min-width: 160px;
 				height: 37px;
 				padding: 9px 0 10px 0;
 				font-size: 16px;
