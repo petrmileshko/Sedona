@@ -49,6 +49,11 @@ P {
 	margin: 0;
 }
 
+button,
+input {		/* у этих элементов укажем наследование семейства шрифта иначе будет использован браузерный !!*/
+	font-family: inherit;
+}
+
  /* изменяем боксовою модель */
 *,
 *::before,
@@ -71,6 +76,7 @@ body {
 	min-height: 100%;
 	margin: 0 auto;
 	font-family: "PT sans", sans-serif;
+	overflow-wrap: anywhere;
 	background-color: #ffffff;
 }
 
@@ -158,7 +164,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.navigation-menu-link {
 			display: block;
 			padding: 20px 17px;
-			overflow-wrap: break-word;
 		}
 
 		.navigation-menu-item {
@@ -527,7 +532,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			font-weight: 700;
 			font-size: 24px;
 			line-height: 28px;
-			overflow-wrap: break-word;
 		}
 
 		.advantages-item__large .advantages-item-title {
@@ -546,7 +550,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 30px;
-			overflow-wrap: break-word;
 		}
 
 		.advantages-item__large .advantages-item-description {
@@ -680,7 +683,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 		.subscribe-newsletter-title.text-title {
 			margin-bottom: 29px;
-			overflow-wrap: break-word;
 		}
 
 		.subscribe-newsletter-description {
@@ -688,7 +690,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			margin-bottom: 46px;
 			font-size: 22px;
 			line-height: 26px;
-			overflow-wrap: break-word;
 		}
 
 		.subscribe-form {
@@ -732,8 +733,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.subsribe-form.button {
 			width: 200px;
 			font-size: 20px;
+			font-weight: 700;
 			line-height: 26px;
-			overflow-wrap: break-word;
 			background-color: #83b3d3;
 			border-radius: 0px 10px 10px 0px;
 		}
@@ -839,9 +840,9 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	}
 
 	.catalog-filters-group {
-		width: 150px;
+		width: 154px;
 		padding: 0;
-		margin: 0 67px 0 0;
+		margin: 0 65px 0 0;
 		border: none;
 	}
 
@@ -1297,7 +1298,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 					font-weight: 700;
 					font-size: 24px;
 					line-height: 31px;
-					overflow-wrap: break-word;
 				}
 
 		.hotel-info-type,
@@ -1312,7 +1312,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			height: min-content;
 			padding: 8px 0;
 			font-weight: 700;
-			overflow-wrap: break-word;
 		}
 
 		.hotel-card-more.button {
@@ -1357,7 +1356,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				font-size: 16px;
 				line-height: 21px;
 				text-align: center;
-				overflow-wrap: break-word;
 				color: #333333;
 				background: #f2f2f2;
 				border-radius: 4px;
@@ -1409,7 +1407,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 26px;
-		overflow-wrap: break-word;
 		background-color: #83b3d3;
 	}
 
