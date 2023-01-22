@@ -1281,7 +1281,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	.hotel-card {
 		display: grid;
 		grid-template-columns: repeat(2, 140px);
-		grid-template-rows: 206px auto auto min-content auto;
+		grid-template-rows: 206px min-content min-content min-content min-content;
 		row-gap: 16px;
 		column-gap: 20px;
 		width: 340px;
@@ -1309,18 +1309,19 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 		.hotel-card-more.button,
 		.hotel-card-favorite.button {
+			height: min-content;
 			padding: 8px 0;
 			font-weight: 700;
+			word-break: break-word;
 		}
 
 		.hotel-card-more.button {
-			float: right;
 			width: 133px;
 		}
 
 		.hotel-card-favorite.button {
-			background: #83b3d3;
 			width: 141px;
+			background: #83b3d3;
 		}
 
 		.hotel-card-ratings {
@@ -1350,14 +1351,20 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 			.hotel-rating-popularity {
 				min-width: 160px;
-				height: 37px;
+				max-width: 160px;
+				min-height: 37px;
 				padding: 9px 0 10px 0;
 				font-size: 16px;
 				line-height: 21px;
 				text-align: center;
+				word-break: break-word;
 				color: #333333;
 				background: #f2f2f2;
 				border-radius: 4px;
+			}
+
+			.rating-popularity-counter::before {
+				content: " ";
 			}
 
 			.hotel-card-link.card-title:focus {
