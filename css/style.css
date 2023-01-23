@@ -352,7 +352,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 	.footer-contact-tel {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		min-width: 361px;
 		min-height: 70px;
@@ -428,7 +428,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .intro-devider {
 	width: 100%;
 	height: 58px;
-	margin-top: 25px;
+	margin-top: 20.5px;
 	background-image: url("../images/index/bg-intro-devider.svg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -642,6 +642,9 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 	.hotel-search .text-description {
 		margin-bottom: 56px;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 22px;
 		line-height: 26px;
 	}
 
@@ -699,10 +702,11 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 		.subscribe-form.field-input {
 			flex-grow: 1;
-			width: 100%;
 			min-width: 50px;
 			padding-left: 20px;
 			box-sizing: border-box;
+			font-size: 18px;
+			font-weight: 400;
 			color: rgba(0, 0, 0, 0.6);
 			background-color: #f2f2f2;
 			border-radius: 10px 0px 0px 10px;
