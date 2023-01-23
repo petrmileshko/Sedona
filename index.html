@@ -293,21 +293,21 @@
 			</button>
 
 			<form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
-				<label class="form-serach-label">
-					Дата заезда:
+				<label class="form-search-label">
+					<span class="label-text">Дата заезда:</span>
 					<input class="search-date" type="text" name="date-checkin" value="27 апреля 2020">
 					<span class="response-message wrong-date">Мы не можем отправить вас в прошлое.</span>
 				</label>
 
-				<label class="form-serach-label">
-					Дата выезда:
+				<label class="form-search-label">
+					<span class="label-text">Дата выезда:</span>
 					<input class="search-date" type="text" name="date-checkout" value="1 сентября 2021">
 					<span class="response-message">На эти даты есть свободные номера. Пока есть.</span>
 				</label>
 
 				<div class="persons-wrapper">
-					<div class="form-serach-label">
-						<label for="persons">Взрослые:</label>
+					<div class="form-search-label">
+						<label class="label-text" for="persons">Взрослые:</label>
 						<input class="search-persons" type="number" id="persons" name="persons" value="2" min="0" step="1">
 						<button class="minus-spin" type="button">
 							<svg class="toggle-icon" aria-hidden="true" focusable="false" width="13" height="1"
@@ -324,9 +324,9 @@
 						</button>
 					</div>
 
-					<div class="form-serach-label">
+					<div class="form-search-label">
 						<div class="children-wrapper">
-							<label for="children">Дети:</label>
+							<label class="label-text" for="children">Дети:</label>
 							<span class="search-info"><span class="visually-hidden">Количество
 									детей</span></span>
 							<div class="info-popover">
