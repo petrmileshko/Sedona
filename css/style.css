@@ -825,7 +825,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Секция Список товаров, Фильтры и Сортировки */
 .bg-container {
-	padding: 30px 72px 83px 71px;
+	padding: 30px 72px 80px 71px;
 	color: #ffffff;
 	background-color: #756257;
 	background-image: url("../images/catalog/bg-catalog.jpg");
@@ -1131,7 +1131,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 	.sorting-filters {
 		display: flex;
-		padding: 44px 0 50px 0;
+		padding: 44px 0 53px 0;
 	}
 
 		.hotels-found-text {
@@ -1139,7 +1139,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			margin-right: 191px;
 			font-weight: 700;
 			font-size: 30px;
-			line-height: 39px;
+			line-height: 46px;
 		}
 
 
