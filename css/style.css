@@ -148,6 +148,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		width: 1060px;
 		margin: 0 auto;
 	}
+
 		.logo-link{
 			display: flex;				/* Необходимо чтобы избавиться от нижнего отступа у img */
 			margin-right: 30px;
@@ -268,7 +269,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		}
 
 		.navigation-menu-item.button .navigation-menu-link:focus:not(:active) {
-			color: rgba(255, 255, 255, 1);
+			color: #ffffff;
 			background-color: #615048;
 			outline: 3px solid #83b3d3;
 			border-radius: 4px;
@@ -388,12 +389,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			height: 70px;
 		}
 
-		.developer-link:hover svg,
-		.developer-link:focus svg {
+		.developer-link:hover .developer-icon,
+		.developer-link:focus .developer-icon {
 			fill: #756257;
 		}
 
-		.developer-link:hover svg {
+		.developer-link:hover .developer-icon {
 			fill: #756257;
 		}
 
@@ -402,7 +403,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			border-radius: 10px;
 		}
 
-		.developer-link:active svg {
+		.developer-link:active .developer-icon {
 			outline: none;
 			fill: rgba(117, 98, 87, 0.3);
 		}
@@ -514,9 +515,10 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		background: #83b3d3;
 	}
 	.description-container {
-		padding: 20px;
 		width: 400px;
+		padding: 20px;
 	}
+	
 	.advantages-item__large:nth-of-type(even) > .advantages-item-info {
 		flex-direction: row-reverse;
 	}
@@ -684,7 +686,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 }
 
 		.subscribe-newsletter-title.text-title {
-			margin-bottom: 45px;
+			margin-bottom: 28px;
 		}
 
 		.subscribe-newsletter-description {
@@ -921,6 +923,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			.item-control:active:not(:disabled) > .control-input[type="radio"] + .item-control-mark {
 				background-color: rgba(255, 255, 255, 0.3);
 			}
+
 			.control-input:disabled + .item-control-mark {
 				color: #333333;
 				background-color: rgba(255, 255, 255, 0.6);
@@ -975,17 +978,17 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 				border-radius: 4px;
 			}
 
+			.filter-item-input:first-of-type {
+				padding-left: 19px;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+
 			.filter-item-input:last-of-type {
 				left:-2px;
 				padding-left: 17px;
 				border-top-left-radius: 0;
 				border-bottom-left-radius: 0;
-			}
-
-			.filter-item-input:first-of-type {
-				padding-left: 19px;
-				border-top-right-radius: 0;
-				border-bottom-right-radius: 0;
 			}
 
 			.filter-item-input:hover {
@@ -1000,10 +1003,12 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			.filter-item-input:active {
 				background-color: #756257;
 			}
+
 			.filter-item-input:disabled {
 				color: #333333;
 				background-color: rgba(255, 255, 255, 0.6);
 			}
+			
 			.range-scale {
 				width: 287px;
 				height: 4px;
@@ -1060,9 +1065,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	}
 
 		.catalog-filters-submit.button {
-			flex: 1 1 auto;
 			width: 160px;
-			height: 48px;
+			min-height: 48px;
 			margin-bottom: 13px;
 			background-color: #83b3d3;
 			border-radius: 4px;
@@ -1091,8 +1095,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	
 		.catalog-filters-reset.button {
 			width: 100px;
-			height: 32px;
-			flex: 1 1 auto;
+			min-height: 32px;
 			font-size: 18px;
 			line-height: 23px;
 			text-transform: none;
@@ -1157,8 +1160,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		.select-button {
 			display: grid;
 			grid-template-columns: 1fr 50px;
-			padding: 9px 18px 10px 15px;
-			padding-right: 0;
+			padding: 9px 0 10px 15px;
 			font-size: 18px;
 			line-height: 23px;
 			color: #333333;
@@ -1183,7 +1185,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			border-color: #83b3d3;
 		}
 
-		.select-button:focus {
+		.select-button:focus:not(:active) {
 			outline-color: #83b3d3;
 		}
 
@@ -1221,6 +1223,16 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 		.select-option:hover {
 			background-color: rgba(222, 222, 222,0.5);
+		}
+		
+		.select-option:focus:not(:active) {
+			outline-color: #83b3d3;
+		}
+
+		.select-option:active {
+			color: rgba(51, 51, 51, 0.3);
+			outline: none;
+			border-color: #e6e6e6;
 		}
 
 		.catalog-view {
@@ -1297,11 +1309,11 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			grid-column: 1/-1;
 		}
 
-				.hotel-card-title {
-					font-weight: 700;
-					font-size: 24px;
-					line-height: 31px;
-				}
+		.hotel-card-title {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 31px;
+		}
 
 		.hotel-info-type,
 		.hotel-info-price {
@@ -1327,42 +1339,41 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		}
 
 		.hotel-card-ratings {
-			display: flex;
 			grid-column: 1 /-1;
-			align-self: end;
+			align-self: flex-end;
+			display: flex;
 			gap: 49px;
 			align-items: center;
 			justify-content: space-between;
 			width: 300px;
 		}
 
-			.hotel-rating-stars {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 5px;
-			}
+		.hotel-rating-stars {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+		}
 
-			.hotel-rating-star::before {
-				display: block;
-				width: 18px;
-				height: 17px;
-				background-image: url("../images/catalog/star-icon.svg");
-				background-repeat: no-repeat;
-				content: "";
-			}
+		.hotel-rating-star::before {
+			display: block;
+			width: 18px;
+			height: 17px;
+			background-image: url("../images/catalog/star-icon.svg");
+			background-repeat: no-repeat;
+			content: "";
+		}
 
-			.hotel-rating-popularity {
-				min-width: 160px;
-				max-width: 160px;
-				min-height: 37px;
-				padding: 9px 0 10px 0;
-				font-size: 16px;
-				line-height: 21px;
-				text-align: center;
-				color: #333333;
-				background: #f2f2f2;
-				border-radius: 4px;
-			}
+		.hotel-rating-popularity {
+			width: 160px;
+			min-height: 37px;
+			padding: 9px 0 10px 0;
+			font-size: 16px;
+			line-height: 21px;
+			text-align: center;
+			color: #333333;
+			background: #f2f2f2;
+			border-radius: 4px;
+		}
 
 			.rating-popularity-counter::before {
 				content: " ";
@@ -1428,9 +1439,9 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	}
 
 	.catalog-load-more.button:disabled {
-		outline: none;
 		color: #333333;
 		background-color: rgb(107, 105, 105);
+		outline: none;
 		cursor: auto;
 	}
 
@@ -1506,15 +1517,18 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		width: 160px;
 	}
 
-
-.catalog+.subscribe-newsletter {
+.catalog + .subscribe-newsletter {
 	padding: 73px 200px 140px 200px;
 	color: inherit;
 	background-color: inherit;
 	background-image: none;
 }
 
-.catalog+.subscribe-newsletter .subscribe-form.field-input {
+.catalog + .subscribe-newsletter .text-title {
+	margin-bottom: 45px;
+}
+
+.catalog + .subscribe-newsletter .subscribe-form.field-input {
 	background: #f2f2f2;
 }
 
@@ -1606,7 +1620,7 @@ background-color: #e6e6e6;
 }
 
 .label-text {
-	padding-top: 6px;
+	padding-top: 7px;
 }
 
 .response-message {
@@ -1725,8 +1739,8 @@ background-color: #e6e6e6;
 }
 
 .children-wrapper > .label-text {
-	margin-right: 10px;
-	padding-top: 1px;
+	margin-right: 11px;
+	padding-top: 4px;
 }
 
 .search-info {
@@ -1784,6 +1798,10 @@ background-color: #e6e6e6;
 	flex-direction: column;
 	align-items: center;
 	width: 256px;
+}
+
+.decorative-triangle {
+	margin-bottom: -1px;
 }
 
 .search-info:hover + .info-popover {
