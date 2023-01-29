@@ -769,7 +769,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 /* Страница Каталога */
 		.page-heading {
 			min-height: 68px;
-			margin-bottom: 5px;
+			margin-bottom: -6px;
 			font-weight: 700;
 			font-size: 60px;
 			line-height: 78px
@@ -1062,7 +1062,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		align-items: center;
 		width: 160px;
 		margin-left: auto;
-		margin-top: auto;
+		margin-top: 59px;
 	}
 
 		.catalog-filters-submit.button {
@@ -1135,7 +1135,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 	.sorting-filters {
 		display: flex;
-		padding: 44px 0 53px 0;
+		padding: 44px 0 51px 0;
 	}
 
 		.hotels-found-text {
