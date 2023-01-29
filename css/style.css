@@ -70,14 +70,10 @@ input {		/* у этих элементов укажем наследование
 
 /* переопределяем свойства body строим сетку страниц с приклееным подвалом к низу окна браузера*/
 body {
-	display: flex;
-	flex-direction: column;
-	width: 1200px;
-	min-height: 100%;
-	margin: 0 auto;
+	margin: 0;
+	height: 100%;
 	font-family: "PT sans", sans-serif;
 	overflow-wrap: anywhere;
-	background-color: #ffffff;
 }
 
 a {					/* меняем у всех ссылок цвет по умолчанию на наследуемый от родителя */
@@ -133,6 +129,16 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 .hotel-rating-popularity,
 .modal-title {
 	text-transform: uppercase;
+}
+
+.page-container {	/* контейнер  для выравнивания страниц*/
+	display: flex;
+	flex-direction: column;
+	width: 1200px;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Шапка сайта */
