@@ -1360,6 +1360,10 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			background: #83b3d3;
 		}
 
+		.hotel-card-favorite.button.favorite-activated {
+			background: #7db54f;
+		}
+
 		.hotel-card-ratings {
 			grid-column: 1 /-1;
 			align-self: flex-end;
