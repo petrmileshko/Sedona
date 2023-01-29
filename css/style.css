@@ -873,6 +873,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 			.item-control-mark {
 				position: relative;
+				flex-shrink: 0;
 				width: 20px;
 				height: 20px;
 				margin-right: 19px;
