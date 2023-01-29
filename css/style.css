@@ -451,6 +451,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		width: 720px;
 		margin: 0 auto;
 		margin-bottom: 31px;
+		color: #000000;
 	}
 
 	.text-title {
@@ -533,6 +534,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			font-weight: 700;
 			font-size: 24px;
 			line-height: 28px;
+			color: #000000;
 		}
 
 		.advantages-item__large .advantages-item-title {
@@ -540,6 +542,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			font-weight: 700;
 			font-size: 24px;
 			line-height: 28px;
+			color: #ffffff;
 		}
 
 		.advantages-item-number {
@@ -551,10 +554,20 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			margin-left: auto;
 			margin-right: auto;
 			margin-top: 30px;
+			color: #333333;
 		}
 
 		.advantages-item__large .advantages-item-description {
 			max-width: 220px;
+			color: #ffffff;
+		}
+
+		.advantages-sublist-item > .advantages-item-title {
+			color: #000000;
+		}
+
+		.advantages-sublist-item > .advantages-item-description {
+			color: #333333;
 		}
 
 	.advantages-sublist {
@@ -654,6 +667,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 		margin: 0 73px;
 		padding: 15px 0;
 		font-size: 20px;
+		font-weight: 700;
 		line-height: 30px;
 		border-radius: 10px;
 	}
@@ -1069,6 +1083,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			width: 160px;
 			min-height: 48px;
 			margin-bottom: 13px;
+			font-weight: 700;
 			background-color: #83b3d3;
 			border-radius: 4px;
 		}
