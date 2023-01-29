@@ -1033,7 +1033,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 			.range-scale {
 				width: 287px;
 				height: 4px;
-				background-color: rgba(0,0,0,0.3);
+				background-color: rgba(255,255,255,0.3);
 			}
 
 			.range-bar {
