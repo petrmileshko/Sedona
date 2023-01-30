@@ -232,8 +232,8 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 .favorite-counter {
 	position: absolute;
-	top:15px;
-	left:24px;
+	top: 15px;
+	left: 24px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -730,17 +730,17 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 }
 
 .subscribe-form.field-input:hover {
-	background-color:  #e6e6e6;
+	background-color: #e6e6e6;
 }
 
 .subscribe-form.field-input:focus:not(:active) {
-	background-color:  #e6e6e6;
+	background-color: #e6e6e6;
 	outline: 3px solid #83b3d3;
 	outline-offset: -3px;
 }
 
 .subscribe-form.field-input:invalid {
-	background-color:  #ffffff;
+	background-color: #ffffff;
 	border: 2px solid #FF5757;
 	outline: none;
 }
@@ -1559,7 +1559,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	left: 0;
 	right: 0;
 	z-index: 1;
-	background-color:  rgba(242, 242, 242, 0.8);
+	background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal-off {
