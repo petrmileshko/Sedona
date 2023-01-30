@@ -1158,7 +1158,7 @@ h3.advantages-item-title::after {
 
 .sorting-filters {
 	display: flex;
-	padding: 44px 0 51px 0;
+	padding: 44px 0 53px 0;
 }
 
 .hotels-found-text {
@@ -1393,7 +1393,7 @@ h3.advantages-item-title::after {
 .hotel-rating-popularity {
 	width: 160px;
 	min-height: 37px;
-	padding: 9px 0 10px 0;
+	padding: 8px 0 8px 0;
 	font-size: 16px;
 	line-height: 21px;
 	text-align: center;
@@ -1472,7 +1472,7 @@ h3.advantages-item-title::after {
 }
 
 .devider-button-more {
-	margin-top: 30px;
+	margin-top: 34px;
 	padding: 29px 0;
 	background-color: transparent;
 	border-top: 1px solid #e6e6e6;
