@@ -479,6 +479,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	grid-template-columns: repeat(3, 1fr);
 	counter-reset: list;
 }
+
 .advantages-item {
 	position: relative;
 	display: flex;
@@ -518,6 +519,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	color: #ffffff;
 	background: #83b3d3;
 }
+
 .description-container {
 	width: 400px;
 	padding: 20px;
@@ -838,7 +840,6 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 	background-image: url("../images/catalog/breadcramps-arrow.svg");
 	content: "";
 }
-
 
 /* Секция Список товаров, Фильтры и Сортировки */
 .bg-container {
