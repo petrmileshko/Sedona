@@ -422,20 +422,17 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 
 /* Секция Введение */ /* Главная Страница */
 .intro {
-	height: 485px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	min-height: 485px;
 	background-color: #756257;
-	background-image: url("../images/index/bg-index.jpg") ;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.intro-devider {
-	width: 100%;
-	height: 58px;
-	margin-top: 20.5px;
-	background-image: url("../images/index/bg-intro-devider.svg");
-	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-image: url("../images/index/bg-intro-devider.svg"),
+										url("../images/index/bg-index.jpg");
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain, cover;
+	background-position: bottom;
 }
 
 .intro-image {
