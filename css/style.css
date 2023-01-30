@@ -1535,8 +1535,13 @@ h3.advantages-item-title::after {
 	color: #333333;
 }
 
-.select-wrapper > p {
+.select-wrapper > .text-title {
 	min-width: 175px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 23px;
+	color: #333333;
+	text-transform: none;
 }
 
 .pagination-select {
