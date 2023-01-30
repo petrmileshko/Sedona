@@ -35,17 +35,20 @@
 } 
 
 	/* обнуление отступов у всех заголовков */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {					
-		margin: 0;
+.text-title,
+.modal-title,
+.advantages-item-title,
+.hotel-card-title,
+.page-heading {
+	margin: 0;
  }
 
 	/* обнуление отступов у всех абзцев */
-p {
+.text-description,
+.advantages-item-description,
+.subscribe-newsletter-description,
+.hotels-found-text,
+.hotel-card-ratings {
 	margin: 0;
 }
 
