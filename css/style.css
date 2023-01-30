@@ -492,7 +492,7 @@ a {					/* меняем у всех ссылок цвет по умолчани�
 }
 
 .advantages-item-number::before {
-	content: '— №'counters(list,'')' —';
+	content: "— №"counters(list,"")" —";
 }
 
 .advantages-item,
