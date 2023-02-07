@@ -1430,11 +1430,17 @@ h3.advantages-item-title::after {
 	background-color: #68a2ca;
 }
 
+.hotel-card-favorite.favorite-activated:hover {
+	background-color: #6c9e42;
+}
+
 .hotel-card-more.button:focus {
+	background-color: #615048;
 	outline: 3px solid #83b3d3;
 }
 
 .hotel-card-favorite.button:focus {
+	background-color: #6c9e42;
 	outline: 3px solid #756257;
 }
 
