@@ -15,10 +15,10 @@
 * Файлы для pixel perfect:
 
 Главная страница
-![image](https://files.webpeternet.ru/main-page.png)
+![image](https://files.webpeternet.com/main-page.png)
 
 Страница каталога
-![image](https://files.webpeternet.ru/catalog.png)
+![image](https://files.webpeternet.com/catalog.png)
 
 Модальное окно
-![image](https://files.webpeternet.ru/modal.png)
+![image](https://files.webpeternet.com/modal.png)
