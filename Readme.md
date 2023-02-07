@@ -1,10 +1,10 @@
-# Личный проект «Седона» верстка с [макета](https://www.figma.com/file/P1ylo3VhdO3CehnYUbq3Li/HTML-1-%2F-%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0-%2F-petr?node-id=24196%3A235&t=UTqJKHvmNKostNIK-1)
+# Личный проект «Седона» верстка с [макета](https://www.figma.com/file/P1ylo3VhdO3CehnYUbq3Li/HTML-1-%2F-%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0-%2F-petr?node-id=24196%3A679&t=nkWZtLLD3FgdN5II-0)
 
 * Студент: [Петр Милешко](https://htmlacademy.ru/profile/webpeternet).
 * Наставник: `Неизвестно`.
 
 
-[текущий проект]()
+[Проект сдан, замечания устранены](https://htmlacademy.notion.site/2171653-0465b9d384b347f7938e40f3367e41a6)
 ---
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
