@@ -1,10 +1,10 @@
-# Личный проект «Седона» верстка с [макета](https://www.figma.com/file/P1ylo3VhdO3CehnYUbq3Li/HTML-1-%2F-%D0%A1%D0%B5%D0%B4%D0%BE%D0%BD%D0%B0-%2F-petr?node-id=24196%3A679&t=nkWZtLLD3FgdN5II-0)
+# Личный проект «Седона» верстка с [макета](https://www.figma.com/file/P1ylo3VhdO3CehnYUbq3Li/Sedona?node-id=0%3A1&t=TLSpQPP6OtqAqlHt-0)
 
 * Студент: [Петр Милешко](https://htmlacademy.ru/profile/webpeternet).
 * Наставник: `Неизвестно`.
 
 
-## [Проект сдан](https://portfolio.webpeternet.com/sedona/)
+## [Проект сдан](https://portfolio.webpeternet.ru/sedona/)
 [Замечания устранены](https://htmlacademy.notion.site/2171653-0465b9d384b347f7938e40f3367e41a6)
 ---
 
