@@ -3,10 +3,12 @@
 * Студент: [Петр Милешко](https://htmlacademy.ru/profile/webpeternet).
 * Наставник: `Неизвестно`.
 
+[Как работать с удаленным репозиторием](https://rutube.ru/video/272f50f2d0a79ec3b8801e6f126a746d/)
 
 ## [Проект сдан](https://portfolio.webpeternet.ru/sedona/)
 [Замечания устранены](https://htmlacademy.notion.site/2171653-0465b9d384b347f7938e40f3367e41a6)
 ---
+
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
 
