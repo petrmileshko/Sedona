@@ -3,8 +3,6 @@
 * Студент: [Петр Милешко](https://htmlacademy.ru/profile/webpeternet).
 * Наставник: `Неизвестно`.
 
-[Как работать с удаленным репозиторием](https://rutube.ru/video/272f50f2d0a79ec3b8801e6f126a746d/)
-
 [Замечания устранены](https://htmlacademy.notion.site/2171653-0465b9d384b347f7938e40f3367e41a6)
 ---
 
